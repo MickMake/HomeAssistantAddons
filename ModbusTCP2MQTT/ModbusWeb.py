@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from SungrowModbusTcpClient import SungrowModbusTcpClient
+from SungrowModbusWebClient import SungrowModbusWebClient
 from pymodbus.payload import BinaryPayloadDecoder
 from pymodbus.client.sync import ModbusTcpClient
 from pymodbus.constants import Endian
@@ -124,8 +124,8 @@ client_payload = {
 }
 
 if "sungrow-" in options['model']:
-    logging.info(f"Create SungrowModbusTcpClient. Model: {options['model']}")
-    client = SungrowModbusTcpClient.SungrowModbusTcpClient(**client_payload)
+    logging.info(f"Create SungrowModbusWebClient. Model: {options['model']}")
+    client = SungrowModbusWebClient.SungrowModbusWebClient(**client_payload)
 else:
     logging.info(f"Create ModbusTcpClient. Model: {options['model']}")
     client = ModbusTcpClient(**client_payload)
@@ -135,7 +135,7 @@ client.close()
 logging.info("Modbus connected")
 
 # Configure MQTT
-mqtt_client = mqtt.Client("ModbusTCP")
+mqtt_client = mqtt.Client("ModbusWeb")
 mqtt_client.username_pw_set(options['mqtt_user'], options['mqtt_pass'])
 if options['mqtt_port'] == 8883:
     mqtt_client.tls_set()

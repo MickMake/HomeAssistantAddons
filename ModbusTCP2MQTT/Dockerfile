@@ -9,7 +9,7 @@ ARG BUILD_ARCH
 COPY models/ /
 COPY requirements.txt /tmp/
 COPY run.sh /
-COPY ModbusTCP.py /
+COPY ModbusWeb.py /
 
 # Install requirements for add-on
 RUN apk add --no-cache python3-dev py3-pip g++
@@ -19,7 +19,7 @@ RUN chmod a+x /run.sh
 CMD ["/run.sh"]
 
 LABEL \ 
-    io.hass.name="ModbusTCP2MQTT" \
+    io.hass.name="ModbusWeb2MQTT" \
     io.hass.description="Sungrow-SMA Solar inverter communication Addon" \
     io.hass.version=${BUILD_VERSION} \
     io.hass.type="addon" \

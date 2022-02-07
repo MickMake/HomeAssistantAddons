@@ -19,4 +19,4 @@ else
     bashio::log.info "Configured'$MQTT_HOST' mqtt broker."
 fi
 
-exec python3 /ModbusTCP.py --ip=${IP} --port=${PORT} --model=${MODEL} --mqtt_host=${MQTT_HOST} --mqtt_port=${MQTT_PORT} --mqtt_user=${MQTT_USER} --mqtt_pass=${MQTT_PASS} --scan=${SCAN_INTERVAL} --timeout=${SCAN_TIMEOUT} --log_level=${LOG_LEVEL}
+exec python3 /ModbusWeb.py --ip=${IP} --port=${PORT} --model=${MODEL} --mqtt_host=${MQTT_HOST} --mqtt_port=${MQTT_PORT} --mqtt_user=${MQTT_USER} --mqtt_pass=${MQTT_PASS} --scan=${SCAN_INTERVAL} --timeout=${SCAN_TIMEOUT} --log_level=${LOG_LEVEL}
