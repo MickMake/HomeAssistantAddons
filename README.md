@@ -45,10 +45,13 @@ Need `Gateway G2` and TTLOCK API token in order to work.
 Get Token [intructions](https://github.com/tonyldo/ttlockio)
 Developer info [TTLock2MQTT](https://github.com/MickMake/TTLock2MQTT)
 
-
 ### ModbusTCP2MQTT
 This addon support SMA & Sungrow Solar Inverter to publish data to MQTT Broker. 
 This add on based on [ModbusTCP2MQTT](https://github.com/MickMake/ModbusTCP2MQTT)
+
+### ModbusWeb2MQTT
+This addon support SMA & Sungrow Solar Inverter to publish data to MQTT Broker. 
+This add on based on [ModbusWeb2MQTT](https://github.com/MickMake/ModbusWeb2MQTT)
 
 
 # Custom Component
