@@ -1,0 +1,9 @@
+[submodule "ModbusTCP2MQTT"]
+	path = ModbusTCP2MQTT
+	url = https://github.com/TenySmart/ModbusTCP2MQTT
+[submodule "TTLock2MQTT"]
+	path = TTLock2MQTT
+	url = https://github.com/MickMake/TTLock2MQTT
+[submodule "ModbusWeb2MQTT"]
+	path = ModbusWeb2MQTT
+	url = https://github.com/MickMake/ModbusWeb2MQTT

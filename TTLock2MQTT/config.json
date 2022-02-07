@@ -1,0 +1,31 @@
+{
+  "name": "TTLock2MQTT",
+  "version": "0.3.2",
+  "slug": "ttlock2mqtt",
+  "description": "Connection between TTLock devices with Home Assistant using MQTT",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "services": [
+    "mqtt:need"
+  ],
+  "url": "https://github.com/TenySmart/TTLock2MQTT",
+  "startup": "system",
+  "boot": "auto",
+  "options": {
+    "Scan_interval": 60,
+    "Log_level": "INFO"
+  },
+  "schema": {
+    "TTLock_username": "str",
+    "TTLock_password":"str",
+    "TTLock_client_Id": "str",
+    "TTLock_client_secrect": "str",
+    "Scan_interval": "int(10,3600)",
+    "Log_level": "list(DEBUG|INFO|WARNING|ERROR)"
+  }
+}
