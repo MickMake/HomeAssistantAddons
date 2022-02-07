@@ -8,7 +8,7 @@ This add-on is just a shortcut to install [hacs](https://hacs.xyz).
 
 ***
 ## Installation
-1. Add the repository URL via the Hassio Add-on Store Tab: **https://github.com/MickMake/HassioAddon**
+1. Add the repository URL via the Hassio Add-on Store Tab: **https://github.com/MickMake/HomeAssistantAddons**
 
 2. Install and start the `Hass.io Community Store` add-on **once**. 
 
@@ -34,4 +34,4 @@ Additional licenses for third-party components of this addon are available as pa
 ### Credits
 - [Home Assistant Community Store](https://hacs.xyz)
 
-[logo]: https://github.com/MickMake/HassioAddon/raw/main/hacs/icon.png
+[logo]: https://github.com/MickMake/HomeAssistantAddons/raw/main/hacs/icon.png

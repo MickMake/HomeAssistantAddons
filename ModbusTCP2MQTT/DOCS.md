@@ -1,6 +1,6 @@
 ## Installation
 
-1. Add the repository URL via the Hassio Add-on Store Tab: **https://github.com/TenySmart/HassioAddon**
+1. Add the repository URL via the Hassio Add-on Store Tab: **https://github.com/MickMake/HomeAssistantAddons**
 2. Configure the "ModbusTCP2MQTT" add-on.
 3. Start the "ModbusTCP2MQTT" add-on.
 

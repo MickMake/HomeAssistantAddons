@@ -13,7 +13,7 @@
   "services": [
     "mqtt:need"
   ],
-  "url": "https://github.com/TenySmart/TTLock2MQTT",
+  "url": "https://github.com/MickMake/TTLock2MQTT",
   "startup": "system",
   "boot": "auto",
   "options": {

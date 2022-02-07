@@ -4,7 +4,7 @@
   "slug": "hacs",
   "description": "Manage all your custom integration (components) and plugin (lovelace elements) with ease.",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "url": "https://github.com/MickMake/HassioAddon/tree/master/hacs",
+  "url": "https://github.com/MickMake/HomeAssistantAddons/tree/master/hacs",
   "startup": "once",
   "boot": "manual",
   "auth_api": true,
