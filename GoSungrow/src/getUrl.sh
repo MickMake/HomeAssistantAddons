@@ -1,6 +1,8 @@
 #!/usr/bin/env bashio
 set -e
 
+cd /usr/local/bin
+
 ARCH="$(uname -m)"
 case "${ARCH}" in
 	'amd64'|'x86_64')
@@ -17,4 +19,6 @@ case "${ARCH}" in
 esac
 
 wget -O- https://github.com/MickMake/GoSungrow/releases/download/v2.1.3/GoSungrow-linux_${ARCH}.tar.gz | tar zxvf - GoSungrow
+
+chmod a+x GoSungrow
 

@@ -36,12 +36,10 @@ ENV SUNGROW_MQTT_USER ${SUNGROW_MQTT_USER}
 ARG TZ
 ENV TZ ${TZ}
 
-COPY src/GoSungrow /usr/local/bin/GoSungrow
 COPY src/run.sh /usr/local/bin/run.sh
-RUN chmod a+x /usr/local/bin/GoSungrow /usr/local/bin/run.sh
+COPY src/getUrl.sh /usr/local/bin/getUrl.sh
+RUN chmod a+x /usr/local/bin/run.sh /usr/local/bin/getUrl.sh && /usr/local/bin/getUrl.sh
 
 # ENTRYPOINT ["/usr/local/bin/GoSungrow"]
-# CMD ["crond", "-f", "-l", "2", "-L", "/var/log/cronlogs"]
-# CMD ["/usr/local/bin/GoSungrow", "mqtt", "sync"]
 CMD ["/usr/local/bin/run.sh"]
 
