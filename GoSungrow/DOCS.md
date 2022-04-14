@@ -58,5 +58,9 @@ The rare occasion:
 - sungrow_timeout - Useful if your iSolarCloud global gateway is slow/unreachable.
 - sungrow_debug - If you REALLY want to see some noise. Just leave it unset.
 
+5. Start it up!
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot7.png)
+
 ## About GoSunGrow
 See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
