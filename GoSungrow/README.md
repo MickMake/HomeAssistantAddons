@@ -17,8 +17,10 @@ So, now you can get to everything using [Home Assistant](https://www.home-assist
 ## Configuration
 Install in the usual manner.
 
+1. Go to Configuration -> Add-ons.
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot1.png)
 
+2. Add the MickMake HA Repository.
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot2.png)
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot3.png)
