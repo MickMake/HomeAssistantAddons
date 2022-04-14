@@ -29,7 +29,7 @@ Enable `Auto update` on the desired add-on or browse Hassio Add-on Store Tab to 
 
 # Add-ons in this Repository
 
-### [GoSunGrow for HA](GoSunGrow)
+### [GoSunGrow for HA](https://github.com/MickMake/HomeAssistantAddons/tree/main/GoSungrow)
 My iSolarCloud API interface for [Home Assistant](https://www.home-assistant.io/).
 
 The [GoSunGrow](https://github.com/MickMake/GoSunGrow/) API interface doesn't just do HA, but a lot more.
