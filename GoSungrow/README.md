@@ -19,7 +19,7 @@ The iSolarCloud interface is kinda nice, but it's not Open Source...
 
 |                                              iSolarCloud                                              |                                              GoSunGrow HA                                               |
 |:-----------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
-| ![iSolarCloud](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/UX-iSolarCloud.png) | ![GoSunGrow-HA](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/UX-GoSunGrow-HA.png) |
+| ![iSolarCloud](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/UX-iSolarCloud.png) | ![GoSunGrow-HA](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/UX-GoSunGrow-HA.png) |
 
 So, now you can get to everything using [Home Assistant](https://www.home-assistant.io/).
 
