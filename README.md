@@ -17,7 +17,7 @@ This repository contains Hass.io add-ons. All add-ons in this repository are tes
 
 3. Scroll down the page to find the new repository, and click the new add-on named you want. Ex:
 
-   <img src="images/repo_ss.png" width="429"/>
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot4b.png)
 
 4. Click <kbd>Install</kbd> and give it a few minutes to finish downloading.
 

@@ -20,9 +20,13 @@ Install in the usual manner.
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot4.png)
 
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot4b.png)
+
 4. Install the add-on and click Configuration.
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot5.png)
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot5b.png)
 
 5. Set the config options.
 
