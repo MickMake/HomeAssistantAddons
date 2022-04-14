@@ -3,32 +3,31 @@
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
 ## What is it?
-
 This [Home Assistant](https://www.home-assistant.io/) add-on uses the [GoSungrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow) GoLang package to query the iSolarCloud API and provide all data on your solar array within [Home Assistant](https://www.home-assistant.io/).
 
 The iSolarCloud interface is kinda nice, but it's not Open Source...
-![alt text](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/HA/iSolarCloud.png?raw=true)
 
-![alt text](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/HA/iSolarCloud.png?raw=true)
+|                                              iSolarCloud                                              |                                              GoSunGrow HA                                               |
+|:-----------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
+| ![iSolarCloud](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/UX-iSolarCloud.png) | ![GoSunGrow-HA](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/UX-GoSunGrow-HA.png) |
 
 So, now you can get to everything using [Home Assistant](https://www.home-assistant.io/).
-![alt text](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/docs/UX-GoSunGrow-HA.png?raw=true)
 
 
-## Want more info?
+## Configuration
+Install in the usual manner.
 
-See the docs here [GoSunGrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/DOCS.md)
+![iSolarCloud](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot1.png)
+
+See the docs here [GoSunGrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/DOCS.md?raw=true)
 
 
-## What does it do?
-
-See the docs here [GoSunGrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/README.md?raw=true)
+## About GoSunGrow?
+See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
 
 
 ## Using GoSungrow:
-
 ### Config and login.
-
 Add your username and password to the config. (See [the website](https://portalau.isolarcloud.com/))
 ```
 $ ./bin/GoSungrow config write --user=USERNAME --password=PASSWORD
