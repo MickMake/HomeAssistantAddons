@@ -17,7 +17,15 @@ So, now you can get to everything using [Home Assistant](https://www.home-assist
 ## Configuration
 Install in the usual manner.
 
-![iSolarCloud](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot1.png)
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot1.png)
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot2.png)
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot3.png)
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot4.png)
+
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot5.png)
 
 See the docs here [GoSunGrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/DOCS.md?raw=true)
 
