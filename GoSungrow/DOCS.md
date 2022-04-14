@@ -28,10 +28,21 @@ Install in the usual manner.
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/ScreenShot6.png)
 
-You will need at least the
+The following options are mandatory:
+- sungrow_user
+- sungrow_password
 
-See the docs here [GoSunGrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow/blob/master/DOCS.md?raw=true)
+You may have to set these options:
+- sungrow_mqtt_host
+- sungrow_mqtt_port
+- sungrow_mqtt_user
+- sungrow_mqtt_password
 
+The rare occasion:
+- sungrow_host - May need to be changed depending on which global server you connect to.
+- sungrow_appkey - Just don't. Really don't, but if you want to hack. Then do!
+- sungrow_timeout - Useful if your iSolarCloud global gateway is slow/unreachable.
+- sungrow_debug - If you REALLY want to see some noise. Just leave it unset.
 
-## About GoSunGrow?
+## About GoSunGrow
 See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
