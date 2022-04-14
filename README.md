@@ -21,7 +21,7 @@ This repository contains Hass.io add-ons. All add-ons in this repository are tes
 
 4. Click <kbd>Install</kbd> and give it a few minutes to finish downloading.
 
-5. Follow the instruction for each addon to configures
+5. Follow the instruction for each addon to configures.
 
 
 ### Updating
@@ -30,5 +30,6 @@ Enable `Auto update` on the desired add-on or browse Hassio Add-on Store Tab to 
 # Add-ons in this Repository
 
 ### GoSunGrow for HA
-My iSolarCloud API interface for [Home Assistant](https://www.home-assistant.io/)
-[GoSunGrow](https://github.com/MickMake/GoSunGrow/)
+My iSolarCloud API interface for [Home Assistant](https://www.home-assistant.io/).
+
+The [GoSunGrow](https://github.com/MickMake/GoSunGrow/) API interface doesn't just do HA, but a lot more.
