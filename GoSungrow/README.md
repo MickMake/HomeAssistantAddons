@@ -13,7 +13,7 @@
 ![Supports i386 Architecture][i386-shield]
 
 ## What is it?
-This [Home Assistant](https://www.home-assistant.io/) add-on uses the [GoSungrow](https://github.com/MickMake/HomeAssistantAddons/GoSungrow) GoLang package to query the iSolarCloud API and provide all data on your solar array within [Home Assistant](https://www.home-assistant.io/).
+This [Home Assistant](https://www.home-assistant.io/) add-on uses the [GoSungrow](https://github.com/MickMake/GoSungrow) GoLang package to query the iSolarCloud API and provide all data on your solar array within [Home Assistant](https://www.home-assistant.io/).
 
 The iSolarCloud interface is kinda nice, but it's not Open Source...
 
