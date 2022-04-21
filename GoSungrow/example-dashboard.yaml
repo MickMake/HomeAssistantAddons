@@ -1,0 +1,2512 @@
+views:
+  - theme: Backend-selected
+    title: Overview
+    path: overview
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: picture-elements
+            image: /local/SungrowEnergy3.png
+            elements:
+              - type: image
+                entity: binary_sensor.gosungrow_grid_power_active
+                tap_action: none
+                state_image:
+                  'off': /local/SungrowEnergy2-GridOff.png
+                state_filter:
+                  'off': opacity(100%)
+                  'on': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_battery_power_active
+                tap_action: none
+                state_image:
+                  'off': /local/SungrowEnergy2-BatteryOff.png
+                state_filter:
+                  'off': opacity(100%)
+                  'on': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_load_power_active
+                tap_action: none
+                state_image:
+                  'off': /local/SungrowEnergy2-LoadOff.png
+                state_filter:
+                  'off': opacity(100%)
+                  'on': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_pv_power_active
+                tap_action: none
+                state_image:
+                  'off': /local/SungrowEnergy2-PVOff.png
+                state_filter:
+                  'off': opacity(100%)
+                  'on': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_pv_power_to_battery_active
+                tap_action: none
+                state_image:
+                  'on': /local/SungrowEnergy2-PVToBattery.png
+                state_filter:
+                  'on': opacity(100%)
+                  'off': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_pv_power_to_load_active
+                tap_action: none
+                state_image:
+                  'on': /local/SungrowEnergy2-PVToLoad.png
+                state_filter:
+                  'on': opacity(100%)
+                  'off': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_pv_power_to_grid_active
+                tap_action: none
+                state_image:
+                  'on': /local/SungrowEnergy2-PVToGrid.png
+                state_filter:
+                  'on': opacity(100%)
+                  'off': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_battery_power_to_load_active
+                tap_action: none
+                state_image:
+                  'on': /local/SungrowEnergy2-BatteryToLoad.png
+                state_filter:
+                  'on': opacity(100%)
+                  'off': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: image
+                entity: binary_sensor.gosungrow_grid_power_to_load_active
+                tap_action: none
+                state_image:
+                  'on': /local/SungrowEnergy2-GridToLoad.png
+                state_filter:
+                  'on': opacity(100%)
+                  'off': opacity(0%)
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+              - type: state-label
+                entity: binary_sensor.gosungrow
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_pv_power_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_pv_power
+                    style:
+                      background-color: rgba(0, 102, 204, 1)
+                      line-height: 8px
+                      padding: 0px 0px
+                      margin: 0px 0px
+                      color: white
+                      top: 4%
+                      left: 50%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_battery_power_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_battery_power
+                    style:
+                      background-color: rgba(0, 102, 204, 1)
+                      line-height: 8px
+                      padding: 0px 0px
+                      margin: 0px 0px
+                      color: white
+                      top: 85%
+                      left: 15.5%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_grid_power_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_grid_power
+                    style:
+                      background-color: rgba(0, 102, 204, 1)
+                      line-height: 8px
+                      padding: 0px 0px
+                      margin: 0px 0px
+                      color: white
+                      top: 85%
+                      left: 85%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_load_power_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_load_power
+                    style:
+                      background-color: rgba(0, 102, 204, 1)
+                      line-height: 8px
+                      padding: 0px 0px
+                      margin: 0px 0px
+                      color: white
+                      top: 65%
+                      left: 50%
+              - type: state-label
+                entity: binary_sensor.gosungrow
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_pv_power_to_battery_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_pv_power_to_battery
+                    style:
+                      color: blue
+                      top: 27%
+                      left: 10%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_pv_power_to_load_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_pv_power_to_load
+                    style:
+                      color: blue
+                      top: 30%
+                      left: 42%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_pv_power_to_grid_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_pv_power_to_grid
+                    style:
+                      color: blue
+                      top: 27%
+                      left: 90%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_battery_power_to_load_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_battery_power_to_load
+                    style:
+                      color: blue
+                      top: 61%
+                      left: 27%
+              - type: conditional
+                conditions:
+                  - entity: binary_sensor.gosungrow_grid_power_to_load_active
+                    state: 'on'
+                elements:
+                  - type: state-label
+                    entity: sensor.gosungrow_grid_power_to_load
+                    style:
+                      color: blue
+                      top: 61%
+                      left: 73%
+              - type: state-label
+                entity: sensor.gosungrow_battery_level_soc
+                style:
+                  color: blue
+                  top: 75.5%
+                  left: 15.5%
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+              state: false
+            hour24: true
+            animate: false
+            unit: kW
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 18
+            height: 260
+            hover_action: hover-info
+            tap_action: none
+            entities:
+              - entity: sensor.gosungrow_pv_power
+                name: PV
+                color: rgb(255, 152, 48, .75)
+                show_points: false
+              - entity: sensor.gosungrow_grid_power
+                name: Grid
+                color: rgb(87, 148, 242, .75)
+                show_points: false
+              - entity: sensor.gosungrow_battery_power
+                name: Battery
+                color: rgb(115, 191, 105, .75)
+                show_points: false
+              - entity: sensor.gosungrow_load_power
+                name: Load
+                color: rgb(184, 119, 217, .75)
+                show_points: false
+              - entity: sensor.sungrow_ripple_control_state
+                name: zero
+                color: rgb(255, 255, 255, .75)
+                fixed_value: true
+                show_points: false
+                show_fill: false
+                show_legend: false
+                show_indicator: false
+                show_state: false
+          - chart_type: line
+            period: day
+            days_to_show: 30
+            type: statistics-graph
+            entities:
+              - sensor.sungrow_daily_pv_yield
+              - sensor.gosungrow_daily_pv_yield
+              - sensor.sungrow_daily_purchased_energy
+              - sensor.gosungrow_daily_purchased_energy
+            stat_types:
+              - mean
+              - max
+              - min
+            title: Stats
+          - square: false
+            columns: 1
+            type: grid
+            cards:
+              - type: entity
+                entity: sensor.gosungrow_pv_daily_yield
+                name: Today Yield
+                state_color: true
+              - square: false
+                columns: 2
+                type: grid
+                cards:
+                  - type: custom:canvas-gauge-card
+                    entity: sensor.gosungrow_pv_self_consumption_2
+                    card_height: 220
+                    gauge:
+                      type: radial-gauge
+                      title: Self-consumption
+                      units: '%'
+                      height: 220
+                      borderShadowWidth: 0
+                      borderOuterWidth: 0
+                      borderMiddleWidth: 0
+                      borderInnerWidth: 0
+                      minValue: 0
+                      maxValue: 100
+                      startAngle: 180
+                      ticksAngle: 360
+                      valueBox: true
+                      majorTicks:
+                        - '0'
+                        - '10'
+                        - '20'
+                        - '30'
+                        - '40'
+                        - '50'
+                        - '60'
+                        - '70'
+                        - '80'
+                        - '90'
+                        - ''
+                      minorTicks: 2
+                      strokeTicks: true
+                      highlights:
+                        - from: 0
+                          to: 10
+                          color: rgba(200, 50, 50, .75)
+                        - from: 10
+                          to: 20
+                          color: rgba(200, 200, 50, .75)
+                        - from: 20
+                          to: 100
+                          color: rgba(50, 200, 50, .75)
+                      borders: true
+                  - type: entity
+                    entity: sensor.gosungrow_pv_self_consumption
+                    name: Self Consumption
+                    state_color: true
+              - square: false
+                columns: 2
+                type: grid
+                cards:
+                  - type: custom:canvas-gauge-card
+                    entity: sensor.gosungrow_pv_battery_charge_2
+                    card_height: 220
+                    gauge:
+                      type: radial-gauge
+                      title: Battery Charge
+                      units: '%'
+                      height: 220
+                      borderShadowWidth: 0
+                      borderOuterWidth: 0
+                      borderMiddleWidth: 0
+                      borderInnerWidth: 0
+                      minValue: 0
+                      maxValue: 100
+                      startAngle: 180
+                      ticksAngle: 360
+                      valueBox: true
+                      majorTicks:
+                        - '0'
+                        - '10'
+                        - '20'
+                        - '30'
+                        - '40'
+                        - '50'
+                        - '60'
+                        - '70'
+                        - '80'
+                        - '90'
+                        - ''
+                      minorTicks: 2
+                      strokeTicks: true
+                      highlights:
+                        - from: 0
+                          to: 10
+                          color: rgba(200, 50, 50, .75)
+                        - from: 10
+                          to: 20
+                          color: rgba(200, 200, 50, .75)
+                        - from: 20
+                          to: 100
+                          color: rgba(50, 200, 50, .75)
+                      borders: true
+                  - type: entity
+                    entity: sensor.gosungrow_pv_battery_charge
+                    name: Battery Charge
+                    state_color: true
+              - square: false
+                columns: 2
+                type: grid
+                cards:
+                  - type: custom:canvas-gauge-card
+                    entity: sensor.gosungrow_pv_feed_in_2
+                    card_height: 220
+                    gauge:
+                      type: radial-gauge
+                      title: Feed-in
+                      units: '%'
+                      height: 220
+                      borderShadowWidth: 0
+                      borderOuterWidth: 0
+                      borderMiddleWidth: 0
+                      borderInnerWidth: 0
+                      minValue: 0
+                      maxValue: 100
+                      startAngle: 180
+                      ticksAngle: 360
+                      valueBox: true
+                      majorTicks:
+                        - '0'
+                        - '10'
+                        - '20'
+                        - '30'
+                        - '40'
+                        - '50'
+                        - '60'
+                        - '70'
+                        - '80'
+                        - '90'
+                        - ''
+                      minorTicks: 2
+                      strokeTicks: true
+                      highlights:
+                        - from: 0
+                          to: 10
+                          color: rgba(200, 50, 50, .75)
+                        - from: 10
+                          to: 20
+                          color: rgba(200, 200, 50, .75)
+                        - from: 20
+                          to: 100
+                          color: rgba(50, 200, 50, .75)
+                      borders: true
+                  - type: entity
+                    entity: sensor.gosungrow_pv_feed_in
+                    name: Feed-in
+                    state_color: true
+              - type: entity
+                entity: sensor.gosungrow_pv_total_yield
+                name: Total Yield
+                state_color: true
+          - square: false
+            columns: 1
+            type: grid
+            cards:
+              - type: entity
+                entity: sensor.gosungrow_daily_total_energy
+                name: E-use Today
+                state_color: true
+              - square: false
+                columns: 2
+                type: grid
+                cards:
+                  - type: custom:canvas-gauge-card
+                    entity: sensor.gosungrow_daily_pv_energy_2
+                    card_height: 220
+                    gauge:
+                      type: radial-gauge
+                      title: Self-sufficiency
+                      units: '%'
+                      height: 220
+                      borderShadowWidth: 0
+                      borderOuterWidth: 0
+                      borderMiddleWidth: 0
+                      borderInnerWidth: 0
+                      minValue: 0
+                      maxValue: 100
+                      startAngle: 180
+                      ticksAngle: 360
+                      valueBox: true
+                      majorTicks:
+                        - '0'
+                        - '10'
+                        - '20'
+                        - '30'
+                        - '40'
+                        - '50'
+                        - '60'
+                        - '70'
+                        - '80'
+                        - '90'
+                        - ''
+                      minorTicks: 2
+                      strokeTicks: true
+                      highlights:
+                        - from: 0
+                          to: 10
+                          color: rgba(200, 50, 50, .75)
+                        - from: 10
+                          to: 20
+                          color: rgba(200, 200, 50, .75)
+                        - from: 20
+                          to: 100
+                          color: rgba(50, 200, 50, .75)
+                      borders: true
+                  - type: entity
+                    entity: sensor.gosungrow_daily_pv_energy
+                    name: Self-sufficiency
+                    state_color: true
+              - square: false
+                columns: 2
+                type: grid
+                cards:
+                  - type: custom:canvas-gauge-card
+                    entity: sensor.gosungrow_daily_purchased_energy_3
+                    card_height: 220
+                    gauge:
+                      type: radial-gauge
+                      title: Purchased Energy
+                      units: '%'
+                      height: 220
+                      borderShadowWidth: 0
+                      borderOuterWidth: 0
+                      borderMiddleWidth: 0
+                      borderInnerWidth: 0
+                      minValue: 0
+                      maxValue: 100
+                      startAngle: 180
+                      ticksAngle: 360
+                      valueBox: true
+                      majorTicks:
+                        - '0'
+                        - '10'
+                        - '20'
+                        - '30'
+                        - '40'
+                        - '50'
+                        - '60'
+                        - '70'
+                        - '80'
+                        - '90'
+                        - ''
+                      minorTicks: 2
+                      strokeTicks: true
+                      highlights:
+                        - from: 0
+                          to: 10
+                          color: rgba(200, 50, 50, .75)
+                        - from: 10
+                          to: 20
+                          color: rgba(200, 200, 50, .75)
+                        - from: 20
+                          to: 100
+                          color: rgba(50, 200, 50, .75)
+                      borders: true
+                  - type: entity
+                    entity: sensor.sungrow_daily_purchased_energy
+                    name: Purchased Energy
+                    state_color: true
+              - type: entity
+                entity: sensor.gosungrow_total_energy_consumption
+                name: Cumulative Electricity Consumption
+                state_color: true
+          - square: false
+            columns: 1
+            type: grid
+            cards:
+              - type: history-graph
+                hours_to_show: 18
+                entities:
+                  - entity: binary_sensor.gosungrow_pv_power_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_battery_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_grid_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_load_active
+                title: PV
+              - type: history-graph
+                hours_to_show: 18
+                entities:
+                  - entity: binary_sensor.gosungrow_battery_power_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_battery_active
+                  - entity: binary_sensor.gosungrow_battery_power_to_load_active
+                title: Battery
+              - type: history-graph
+                hours_to_show: 18
+                entities:
+                  - entity: binary_sensor.gosungrow_grid_power_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_grid_active
+                  - entity: binary_sensor.gosungrow_grid_power_to_load_active
+                title: Grid
+              - type: history-graph
+                hours_to_show: 18
+                entities:
+                  - entity: binary_sensor.gosungrow_load_power_active
+                  - entity: binary_sensor.gosungrow_pv_power_to_load_active
+                  - entity: binary_sensor.gosungrow_battery_power_to_load_active
+                  - entity: binary_sensor.gosungrow_grid_power_to_load_active
+                title: Load
+          - type: grid
+            cards:
+              - type: gauge
+                entity: sensor.sungrow_internal_air_temperature
+                min: 0
+                max: 90
+                needle: true
+                severity:
+                  green: 10
+                  yellow: 40
+                  red: 70
+              - type: gauge
+                entity: sensor.sungrow_battery_temperature
+                min: 0
+                max: 90
+                needle: true
+                severity:
+                  green: 10
+                  yellow: 40
+                  red: 60
+              - type: gauge
+                entity: sensor.sungrow_total_dc_power
+                min: 0
+                max: 9
+                needle: true
+                severity:
+                  green: 6
+                  yellow: 3
+                  red: 0
+                name: PV Yield
+              - type: gauge
+                entity: sensor.sungrow_battery_level_soc
+                min: 0
+                max: 100
+                needle: true
+                severity:
+                  green: 50
+                  yellow: 25
+                  red: 0
+                name: Battery Level
+            columns: 2
+            square: false
+          - type: grid
+            cards:
+              - type: gauge
+                entity: sensor.sungrow_internal_air_temperature
+                min: 0
+                max: 90
+                needle: true
+                severity:
+                  green: 10
+                  yellow: 40
+                  red: 70
+              - type: gauge
+                entity: sensor.sungrow_battery_temperature
+                min: 0
+                max: 90
+                needle: true
+                severity:
+                  green: 10
+                  yellow: 40
+                  red: 60
+              - type: gauge
+                entity: sensor.sungrow_total_dc_power
+                min: 0
+                max: 9
+                needle: true
+                severity:
+                  green: 6
+                  yellow: 3
+                  red: 0
+                name: PV Yield
+              - type: gauge
+                entity: sensor.sungrow_battery_level_soc
+                min: 0
+                max: 100
+                needle: true
+                severity:
+                  green: 50
+                  yellow: 25
+                  red: 0
+                name: Battery Level
+            columns: 2
+            square: false
+          - type: entities
+            entities:
+              - entity: sensor.gosungrow
+              - entity: sensor.sungrow_grid_frequency
+              - entity: sensor.sungrow_array_insulation_resistance
+              - entity: sensor.sungrow_total_reactive_power
+              - entity: sensor.sungrow_total_power_factor
+              - entity: sensor.sungrow_daily_self_consumption_rate
+              - entity: sensor.energy_production_today
+              - entity: sensor.power_production_now
+              - entity: sensor.energy_current_hour
+              - entity: sensor.power_production_next_24hours
+              - entity: sensor.power_production_next_12hours
+            state_color: true
+            title: SunGrow Inverter
+  - title: Power
+    path: power
+    type: panel
+    icon: mdi:solar-power
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_total_dc_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV Yield (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 12
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_total_dc_power
+                name: PV Yield
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_charging_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Battery (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 10.36
+                  color: rgba(50, 200, 50, .75)
+                - from: 10.36
+                  to: 12
+                  color: rgba(128, 128, 128, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_charging_power
+                name: PV to Battery
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_total_export_active_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Grid (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 12
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_total_export_active_power
+                name: PV to Grid
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_pv_to_load_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Load (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 12
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_pv_to_load_power
+                name: PV to Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_total_load_active_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Load (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(50, 200, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 12
+                  color: rgba(200, 50, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(50, 200, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(200, 50, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_total_load_active_power
+                name: Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_discharging_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery to Load (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 6
+                  color: rgba(200, 200, 50, .75)
+                - from: 6
+                  to: 12
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 200, 50, .75)
+              - value: 6
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_discharging_power
+                name: Battery to Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_purchased_power
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Grid to Load (kW)
+              units: kW
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 2
+                  color: rgba(50, 200, 50, .75)
+                - from: 2
+                  to: 6
+                  color: rgba(200, 200, 50, .75)
+                - from: 6
+                  to: 12
+                  color: rgba(200, 50, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(50, 200, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(200, 50, 50, .75)
+            hour24: true
+            animate: false
+            unit: kW
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            height: 250
+            entities:
+              - entity: sensor.sungrow_purchased_power
+                name: Grid to Load
+  - theme: Backend-selected
+    title: Energy
+    path: energy
+    type: panel
+    icon: mdi:home-lightning-bolt-outline
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_pv_yield
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV Yield (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 60
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 15
+                  color: rgba(200, 50, 50, .75)
+                - from: 15
+                  to: 30
+                  color: rgba(200, 200, 50, .75)
+                - from: 30
+                  to: 60
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 15
+                color: rgba(200, 200, 50, .75)
+              - value: 30
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 60
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_pv_yield
+                name: PV Yield
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_battery_charging_energy_from_pv
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Battery (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 12
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_battery_charging_energy_from_pv
+                name: PV to Battery
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_load_energy_consumption_from_pv
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Load (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 60
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 10
+                  color: rgba(200, 50, 50, .75)
+                - from: 10
+                  to: 20
+                  color: rgba(200, 200, 50, .75)
+                - from: 20
+                  to: 60
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 10
+                color: rgba(200, 200, 50, .75)
+              - value: 20
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 60
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_load_energy_consumption_from_pv
+                name: PV to Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_feed_in_energy_pv
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: PV to Grid (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 60
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 15
+                  color: rgba(200, 50, 50, .75)
+                - from: 15
+                  to: 30
+                  color: rgba(200, 200, 50, .75)
+                - from: 30
+                  to: 60
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 15
+                color: rgba(200, 200, 50, .75)
+              - value: 30
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 60
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_feed_in_energy_pv
+                name: PV to Grid
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_load_energy_consumption
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Load (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 60
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 15
+                  color: rgba(50, 200, 50, .75)
+                - from: 15
+                  to: 30
+                  color: rgba(200, 200, 50, .75)
+                - from: 30
+                  to: 60
+                  color: rgba(200, 50, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 25
+                color: rgba(200, 200, 50, .75)
+              - value: 35
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 60
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_load_energy_consumption
+                name: Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_battery_discharging_energy
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery to Load (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 5
+                  color: rgba(200, 200, 50, .75)
+                - from: 5
+                  to: 10
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 200, 50, .75)
+              - value: 5
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_battery_discharging_energy
+                name: Battery to Load
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_purchased_energy
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Grid to Load (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 24
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '4'
+                - '8'
+                - '12'
+                - '16'
+                - '20'
+                - '24'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 6
+                  color: rgba(50, 200, 50, .75)
+                - from: 6
+                  to: 12
+                  color: rgba(200, 200, 50, .75)
+                - from: 12
+                  to: 24
+                  color: rgba(200, 50, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(50, 200, 50, .75)
+              - value: 6
+                color: rgba(200, 200, 50, .75)
+              - value: 12
+                color: rgba(200, 50, 50, .75)
+            hour24: true
+            animate: false
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 24
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_purchased_energy
+                name: Grid to Load
+  - theme: Backend-selected
+    type: panel
+    title: Battery
+    icon: mdi:home-battery
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_daily_battery_charging_energy
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Charge (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 12
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '2'
+                - '4'
+                - '6'
+                - '8'
+                - '10'
+                - '12'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 4
+                  color: rgba(200, 50, 50, .75)
+                - from: 4
+                  to: 8
+                  color: rgba(200, 200, 50, .75)
+                - from: 8
+                  to: 10.36
+                  color: rgba(50, 200, 50, .75)
+                - from: 10.36
+                  to: 12
+                  color: rgba(128, 128, 128, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_daily_battery_charging_energy
+                name: Battery Charge
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_capacity_kwh
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Capacity (kWh)
+              units: kWh
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 25
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: false
+              majorTicks:
+                - '0'
+                - '5'
+                - '10'
+                - '15'
+                - '20'
+                - '25'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 10.36
+                  color: rgba(50, 200, 50, .75)
+                - from: 10.36
+                  to: 25
+                  color: rgba(128, 128, 128, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 4
+                color: rgba(200, 200, 50, .75)
+              - value: 8
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            unit: kWh
+            lower_bound: 0
+            upper_bound: 12
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_capacity_kwh
+                name: Battery Capacity
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_level_soc
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Level (%)
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 100
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: true
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+                - '70'
+                - '80'
+                - '90'
+                - '100'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 25
+                  color: rgba(200, 50, 50, .75)
+                - from: 25
+                  to: 50
+                  color: rgba(200, 200, 50, .75)
+                - from: 50
+                  to: 100
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 25
+                color: rgba(200, 200, 50, .75)
+              - value: 50
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            unit: '%'
+            lower_bound: 0
+            upper_bound: 100
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_level_soc
+                name: Battery Level
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_health_soh
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Health (%)
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 100
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: true
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+                - '60'
+                - '70'
+                - '80'
+                - '90'
+                - '100'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 25
+                  color: rgba(200, 50, 50, .75)
+                - from: 25
+                  to: 50
+                  color: rgba(200, 200, 50, .75)
+                - from: 50
+                  to: 100
+                  color: rgba(50, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 50, 50, .75)
+              - value: 25
+                color: rgba(200, 200, 50, .75)
+              - value: 50
+                color: rgba(50, 200, 50, .75)
+            hour24: true
+            unit: '%'
+            lower_bound: 0
+            upper_bound: 100
+            icon: mdi:battery-heart-outline
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_health_soh
+                name: Battery Health
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_voltage
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Voltage (V)
+              units: V
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 500
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: true
+              majorTicks:
+                - '0'
+                - '100'
+                - '200'
+                - '300'
+                - '400'
+                - '500'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 150
+                  color: rgba(200, 200, 50, .75)
+                - from: 150
+                  to: 300
+                  color: rgba(50, 200, 50, .75)
+                - from: 300
+                  to: 500
+                  color: rgba(200, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 200, 50, .75)
+              - value: 150
+                color: rgba(50, 200, 50, .75)
+              - value: 250
+                color: rgba(200, 200, 50, .75)
+            hour24: true
+            unit: V
+            lower_bound: 0
+            upper_bound: 500
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_voltage
+                name: Battery Voltage
+          - type: custom:canvas-gauge-card
+            entity: sensor.sungrow_battery_current
+            card_height: 220
+            gauge:
+              type: radial-gauge
+              title: Battery Current (A)
+              units: A
+              height: 410
+              borderShadowWidth: 0
+              borderOuterWidth: 0
+              borderMiddleWidth: 0
+              borderInnerWidth: 0
+              minValue: 0
+              maxValue: 50
+              startAngle: 90
+              ticksAngle: 180
+              valueBox: true
+              majorTicks:
+                - '0'
+                - '10'
+                - '20'
+                - '30'
+                - '40'
+                - '50'
+              minorTicks: 2
+              strokeTicks: true
+              highlights:
+                - from: 0
+                  to: 15
+                  color: rgba(200, 200, 50, .75)
+                - from: 15
+                  to: 30
+                  color: rgba(50, 200, 50, .75)
+                - from: 30
+                  to: 50
+                  color: rgba(200, 200, 50, .75)
+              borders: true
+          - type: custom:mini-graph-card
+            show:
+              labels: true
+              points: false
+              icon: false
+              name: false
+              average: true
+              extrema: true
+            color_thresholds:
+              - value: 0
+                color: rgba(200, 200, 50, .75)
+              - value: 15
+                color: rgba(50, 200, 50, .75)
+              - value: 25
+                color: rgba(200, 200, 50, .75)
+            hour24: true
+            unit: A
+            lower_bound: 0
+            upper_bound: 50
+            points_per_hour: 20
+            line_width: 1
+            hours_to_show: 16
+            height: 250
+            entities:
+              - entity: sensor.sungrow_battery_current
+                name: Battery Current
+  - title: VA
+    path: va
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - square: false
+            columns: 2
+            type: grid
+            cards:
+              - type: grid
+                cards:
+                  - type: gauge
+                    entity: sensor.sungrow_battery_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_bus_voltage
+                    min: 0
+                    max: 800
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_mppt1_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_mppt2_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_phase_a_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_phase_b_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_phase_c_voltage
+                    min: 0
+                    max: 400
+                    needle: true
+                columns: 1
+                square: false
+              - type: grid
+                cards:
+                  - type: gauge
+                    entity: sensor.sungrow_battery_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                  - type: gauge
+                    entity: sensor.sungrow_bus_voltage
+                    min: 0
+                    max: 800
+                    needle: true
+                  - type: gauge
+                    entity: sensor.sungrow_mppt1_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                  - type: gauge
+                    entity: sensor.sungrow_mppt2_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                  - type: gauge
+                    entity: sensor.sungrow_phase_a_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                  - type: gauge
+                    entity: sensor.sungrow_phase_b_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                  - type: gauge
+                    entity: sensor.sungrow_phase_c_current
+                    min: 0
+                    max: 10
+                    needle: true
+                    severity:
+                      green: 0
+                      yellow: 8
+                      red: 9
+                columns: 1
+                square: false
+          - type: iframe
+            url: >-
+              http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/hiNOFNPnz/sungrow-voltages?orgId=1&refresh=5m&kiosk
+            aspect_ratio: 150%
+          - type: iframe
+            url: >-
+              http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/trteKHP7k/sungrow-currents?orgId=1&refresh=5m&kiosk
+            aspect_ratio: 150%
+  - theme: Backend-selected
+    title: Power (1d)
+    path: power-1d
+    type: panel
+    badges: []
+    cards:
+      - type: iframe
+        url: >-
+          http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/-cspluLnk/sungrow-energy?orgId=1&refresh=5m&kiosk
+        aspect_ratio: 300%
+  - theme: Backend-selected
+    title: Energy (1d)
+    path: energy-1d
+    type: panel
+    badges: []
+    cards:
+      - type: iframe
+        url: >-
+          http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/-cspluLnk/sungrow-energy?orgId=1&refresh=5m&kiosk
+        aspect_ratio: 300%
+  - title: Totals
+    path: totals
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: sensor.sungrow_total_battery_discharging_energy
+          - entity: sensor.sungrow_total_battery_charging_energy
+          - entity: sensor.sungrow_total_battery_charging_energy_from_pv
+          - entity: sensor.sungrow_total_feed_in_energy
+          - entity: sensor.sungrow_total_feed_in_energy_pv
+          - entity: sensor.sungrow_total_purchased_energy
+          - entity: sensor.sungrow_total_feed_in_energy_pv
+          - entity: sensor.sungrow_total_feed_in_energy
+          - entity: sensor.sungrow_total_load_energy_consumption
+          - entity: sensor.sungrow_total_load_energy_consumption_from_pv
+      - type: history-graph
+        entities:
+          - entity: sensor.sungrow_total_battery_discharging_energy
+          - entity: sensor.sungrow_total_battery_charging_energy
+          - entity: sensor.sungrow_total_battery_charging_energy_from_pv
+          - entity: sensor.sungrow_total_feed_in_energy
+          - entity: sensor.sungrow_total_feed_in_energy_pv
+          - entity: sensor.sungrow_total_purchased_energy
+          - entity: sensor.sungrow_total_feed_in_energy_pv
+          - entity: sensor.sungrow_total_feed_in_energy
+          - entity: sensor.sungrow_total_load_energy_consumption
+          - entity: sensor.sungrow_total_load_energy_consumption_from_pv
+        hours_to_show: 720
+        refresh_interval: 0
+      - type: iframe
+        url: >-
+          http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/MrS5oHPnz/sungrow-misc?orgId=1&refresh=5m&kiosk
+        aspect_ratio: 200%
+  - theme: Backend-selected
+    title: Power (3d)
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - square: false
+            columns: 1
+            type: grid
+            cards:
+              - type: iframe
+                url: >-
+                  http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/JI9YkxY7z/sungrow-power?orgId=1&refresh=5m&from=now-3d&to=now&kiosk
+                aspect_ratio: 200%
+  - theme: Backend-selected
+    title: Energy (3D)
+    path: energy-3d
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: iframe
+            url: >-
+              http://10.0.5.21:8123/api/hassio_ingress/a1AXr4PPuxqW3TTIjIYCvjSDh-BblyuxThvimOFc57o/d/-cspluLnk/sungrow-energy?orgId=1&refresh=5m&from=now-3d&to=now&kiosk
+            aspect_ratio: 200%
+  - theme: Backend-selected
+    title: Direction
+    path: direction
+    type: panel
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: binary_sensor.sungrow_power_battery_to_load
+          - entity: binary_sensor.sungrow_power_grid_to_load
+          - entity: binary_sensor.sungrow_power_pv_to_battery
+          - entity: binary_sensor.sungrow_power_pv_to_grid
+          - entity: binary_sensor.sungrow_power_pv_to_load
+          - entity: binary_sensor.sungrow_power_pv_active
+          - entity: binary_sensor.sungrow_power_battery_active
+          - entity: binary_sensor.sungrow_power_grid_active
+          - entity: binary_sensor.sungrow_power_load_active
+        state_color: true
+  - theme: Backend-selected
+    type: panel
+    title: All
+    path: all
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: sensor.gosungrow
+          - entity: sensor.sungrow_daily_feed_in_energy_pv_compensation
+          - entity: sensor.sungrow_daily_purchased_energy_cost
+          - entity: sensor.sungrow_array_insulation_resistance
+          - entity: sensor.sungrow_battery_capacity_kwh
+          - entity: sensor.sungrow_battery_charging_power
+          - entity: sensor.sungrow_battery_current
+          - entity: sensor.sungrow_battery_discharging_power
+          - entity: sensor.sungrow_battery_energy
+          - entity: sensor.sungrow_battery_power
+          - entity: sensor.sungrow_battery_temperature
+          - entity: sensor.sungrow_battery_voltage
+          - entity: sensor.sungrow_bus_voltage
+          - entity: sensor.sungrow_daily_battery_charging_energy
+          - entity: sensor.sungrow_daily_battery_charging_energy_from_pv
+          - entity: sensor.sungrow_daily_battery_discharging_energy
+          - entity: sensor.sungrow_daily_feed_in_energy
+          - entity: sensor.sungrow_daily_feed_in_energy_pv
+          - entity: sensor.sungrow_daily_load_energy_consumption
+          - entity: sensor.sungrow_daily_load_energy_consumption_from_pv
+          - entity: sensor.sungrow_daily_purchased_energy
+          - entity: sensor.sungrow_daily_pv_yield
+          - entity: sensor.sungrow_drm_state
+          - entity: sensor.sungrow_grid_energy
+          - entity: sensor.sungrow_grid_frequency
+          - entity: sensor.sungrow_grid_power
+          - entity: sensor.sungrow_internal_air_temperature
+          - entity: sensor.sungrow_max_charging_current_bms
+          - entity: sensor.sungrow_max_discharging_current_bms
+          - entity: sensor.sungrow_mppt1_current
+          - entity: sensor.sungrow_mppt1_voltage
+          - entity: sensor.sungrow_mppt2_current
+          - entity: sensor.sungrow_mppt2_voltage
+          - entity: sensor.sungrow_phase_a_backup_current
+          - entity: sensor.sungrow_phase_a_backup_power
+          - entity: sensor.sungrow_phase_a_current
+          - entity: sensor.sungrow_phase_a_voltage
+          - entity: sensor.sungrow_phase_b_backup_current
+          - entity: sensor.sungrow_phase_b_backup_power
+          - entity: sensor.sungrow_phase_b_current
+          - entity: sensor.sungrow_phase_b_voltage
+          - entity: sensor.sungrow_phase_c_backup_current
+          - entity: sensor.sungrow_phase_c_backup_power
+          - entity: sensor.sungrow_phase_c_current
+          - entity: sensor.sungrow_phase_c_voltage
+          - entity: binary_sensor.sungrow_power_battery_active
+          - entity: binary_sensor.sungrow_power_battery_to_load
+          - entity: binary_sensor.sungrow_power_grid_active
+          - entity: binary_sensor.sungrow_power_grid_to_load
+          - entity: binary_sensor.sungrow_power_load_active
+          - entity: binary_sensor.sungrow_power_pv_active
+          - entity: binary_sensor.sungrow_power_pv_to_battery
+          - entity: binary_sensor.sungrow_power_pv_to_grid
+          - entity: binary_sensor.sungrow_power_pv_to_load
+          - entity: sensor.sungrow_purchased_power
+          - entity: sensor.sungrow_pv_to_load_power
+          - entity: sensor.sungrow_ripple_control_state
+          - entity: sensor.sungrow_total_active_power
+          - entity: sensor.sungrow_total_backup_power
+          - entity: sensor.sungrow_total_battery_charging_energy
+          - entity: sensor.sungrow_total_battery_charging_energy_from_pv
+          - entity: sensor.sungrow_total_battery_discharging_energy
+          - entity: sensor.sungrow_total_dc_power
+          - entity: sensor.sungrow_total_export_active_power
+          - entity: sensor.sungrow_total_feed_in_energy
+          - entity: sensor.sungrow_total_feed_in_energy_pv
+          - entity: sensor.sungrow_total_load_active_power
+          - entity: sensor.sungrow_total_load_energy_consumption
+          - entity: sensor.sungrow_total_load_energy_consumption_from_pv
+          - entity: sensor.sungrow_total_power_factor
+          - entity: sensor.sungrow_total_purchased_energy
+          - entity: sensor.sungrow_total_pv_yield
+          - entity: sensor.sungrow_total_reactive_power
+          - entity: sensor.sungrow_wlan_signal_strength
+        state_color: true
+  - theme: Backend-selected
+    title: misc
+    path: misc
+    type: panel
+    badges: []
+    cards:
+      - type: picture-elements
+        image: /local/SungrowEnergy.png
+        style: |
+
+          @keyframes my-blink {
+            from {opacity: 0;}
+            to {opacity: 100;}
+            from {opacity: 100;}
+            to {opacity: 0;}
+          }
+        elements:
+          - type: image
+            entity: binary_sensor.sungrow_power_pv_to_battery
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-PV2Battery.png
+            style:
+              top: 50%
+              left: 50%
+              width: 100%
+              animation: my-blink 1s linear infinite
+          - type: state-label
+            entity: sensor.sungrow_battery_charging_power
+            style:
+              color: blue
+              top: 27%
+              left: 10%
+          - type: image
+            entity: binary_sensor.sungrow_power_pv_to_load
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-PV2Load.png
+            state_filter:
+              'on': opacity(100%)
+              'off': opacity(0%)
+            style:
+              top: 50%
+              left: 50%
+              width: 100%
+          - type: state-label
+            entity: sensor.sungrow_pv_to_load_power
+            style:
+              color: blue
+              top: 30%
+              left: 42%
+          - type: image
+            entity: binary_sensor.sungrow_power_pv_to_grid
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-PV2Grid.png
+            state_filter:
+              'on': opacity(100%)
+              'off': opacity(0%)
+            style:
+              top: 50%
+              left: 50%
+              width: 100%
+          - type: state-label
+            entity: sensor.sungrow_total_export_active_power
+            style:
+              color: blue
+              top: 27%
+              left: 90%
+          - type: image
+            entity: binary_sensor.sungrow_power_battery_to_load
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-Battery2Load.png
+            state_filter:
+              'on': opacity(100%)
+              'off': opacity(0%)
+            style:
+              top: 50%
+              left: 50%
+              width: 100%
+          - type: state-label
+            entity: sensor.sungrow_battery_discharging_power
+            style:
+              color: blue
+              top: 61%
+              left: 27%
+          - type: image
+            entity: binary_sensor.sungrow_power_grid_to_load
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-Grid2Load.png
+            state_filter:
+              'on': opacity(100%)
+              'off': opacity(0%)
+            style:
+              top: 50%
+              left: 50%
+              width: 100%
+          - type: state-label
+            entity: sensor.sungrow_purchased_power
+            style:
+              color: blue
+              top: 61%
+              left: 73%
+          - type: state-label
+            entity: sensor.sungrow_battery_level_soc
+            style:
+              color: blue
+              top: 75%
+              left: 15%
+          - type: image
+            entity: binary_sensor.sungrow_power_pv_to_battery
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-Arrows+45.gif
+            style:
+              top: 53%
+              bottom: 26%
+              transform: rotate(0deg)
+              width: 5%
+          - type: image
+            entity: binary_sensor.sungrow_power_pv_to_battery
+            tap_action: none
+            state_image:
+              'on': /local/SungrowEnergy-Arrows.gif
+            style:
+              top: 20%
+              bottom: 1.5%
+              transform: rotate(0deg)
+              width: 5%
+  - theme: Backend-selected
+    type: panel
+    title: Yield (Hour)
+    badges: []
+    cards:
+      - type: custom:mini-graph-card
+        entities:
+          - entity: sensor.sungrow_total_dc_power
+            aggregate_func: max
+            name: Max
+            color: null
+          - entity: sensor.sungrow_total_dc_power
+            aggregate_func: min
+            name: Min
+          - entity: sensor.sungrow_total_dc_power
+            aggregate_func: avg
+            name: Avg
+            color: green
+        name: PV Yield (hour)
+        hours_to_show: 336
+        group_by: hour
+        points_per_hour: 20
+        line_width: 1
+  - theme: Backend-selected
+    title: Yield (Month)
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - type: custom:mini-graph-card
+            entities:
+              - entity: sensor.sungrow_total_dc_power
+                aggregate_func: max
+                name: Max
+                color: null
+              - entity: sensor.sungrow_total_dc_power
+                aggregate_func: min
+                name: Min
+              - entity: sensor.sungrow_total_dc_power
+                aggregate_func: avg
+                name: Avg
+                color: green
+            name: PV Yield (Month)
+            hours_to_show: 744
+            group_by: date
+            points_per_hour: 20
+            line_width: 1

@@ -1,6 +1,6 @@
 name: "GoSungrow"
 description: "Fetch data from isolarcloud.com and push to HA."
-version: "2.1.3"
+version: "2.2.0"
 stage: stable
 slug: "gosungrow"
 url: "https://github.com/MickMake/GoSunGrow/"
