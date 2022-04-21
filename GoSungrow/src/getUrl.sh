@@ -18,7 +18,7 @@ case "${ARCH}" in
 		exit 1
 esac
 
-wget -O- https://github.com/MickMake/GoSungrow/releases/download/v2.1.3/GoSungrow-linux_${ARCH}.tar.gz | tar zxvf - GoSungrow
+wget -O- https://github.com/MickMake/GoSungrow/releases/download/v2.2.0/GoSungrow-linux_${ARCH}.tar.gz | tar zxvf - GoSungrow
 
 chmod a+x GoSungrow
 
