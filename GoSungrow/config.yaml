@@ -16,6 +16,7 @@ panel_icon: mdi:puzzle
 auth_api: true
 startup: services
 hassio_api: true
+init: false
 
 options:
   sungrow_host: "https://augateway.isolarcloud.com"
