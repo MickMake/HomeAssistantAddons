@@ -1,18 +1,18 @@
 name: "GoSungrow"
 description: "Fetch data from isolarcloud.com and push to HA."
-version: "2.2.1"
+version: "3.0.0"
 stage: stable
 slug: "gosungrow"
 url: "https://github.com/MickMake/GoSunGrow/"
 codenotary: mick@mickmake.com
 arch:
-  - amd64
-  - aarch64
   - armhf
   - armv7
+  - aarch64
+  - amd64
 map:
   - config:rw
-panel_icon: mdi:puzzle
+panel_icon: mdi:solar-power
 auth_api: true
 startup: services
 hassio_api: true

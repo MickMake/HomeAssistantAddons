@@ -17,8 +17,23 @@ export SUNGROW_MQTT_PORT=$(bashio::config 'sungrow_mqtt_port')
 export SUNGROW_MQTT_USER=$(bashio::config 'sungrow_mqtt_user')
 export SUNGROW_MQTT_PASSWORD=$(bashio::config 'sungrow_mqtt_password')
 
-bashio::log.info "Writing GoSungrow config ..."
+if [ -z "${SUNGROW_MQTT_HOST}" ]
+then
+	SUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
+fi
 
+if [ -z "${SUNGROW_MQTT_USER}" ]
+then
+	SUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
+fi
+
+if [ -z "${SUNGROW_MQTT_PASSWORD}" ]
+then
+	SUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
+fi
+
+
+bashio::log.info "Writing GoSungrow config ..."
 /usr/local/bin/GoSungrow config write \
 	--host="${SUNGROW_HOST}" \
 	--user="${SUNGROW_USER}" \
@@ -31,11 +46,18 @@ bashio::log.info "Writing GoSungrow config ..."
 	--mqtt-password="${SUNGROW_MQTT_PASSWORD}" \
 	--debug="${SUNGROW_DEBUG}"
 
-bashio::log.info "Login to iSolarCloud using gateway ${SUNGROW_HOST} ..."
 
+bashio::log.info "Login to iSolarCloud using gateway ${SUNGROW_HOST} ..."
 /usr/local/bin/GoSungrow api login
 
-bashio::log.info "Syncing data from gateway ${SUNGROW_HOST} ..."
 
+bashio::log.info "Syncing data from gateway ${SUNGROW_HOST} ..."
 /usr/local/bin/GoSungrow mqtt sync
+
+
+bashio::log.info "GoSungrow terminated. Checking on things, please include this in any issue on GitHub ..."
+set -x
+ls -lart /usr/local/bin/
+uname -a
+ifconfig
 

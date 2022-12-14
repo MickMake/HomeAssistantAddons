@@ -1,0 +1,87 @@
+views:
+  - theme: Backend-selected
+    title: Home
+    type: panel
+    badges: []
+    cards:
+      - square: false
+        columns: 1
+        type: grid
+        cards:
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_pv_daily_yield
+              - sensor.gosungrow_virtual_1171348_14_1_2_p13112
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_virtual_1171348_14_1_2_battery_power
+              - sensor.gosungrow_battery_power
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_virtual_1171348_14_1_2_grid_power
+              - sensor.gosungrow_grid_power
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_virtual_1171348_14_1_2_p13160
+              - sensor.gosungrow_array_insulation_resistance
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_virtual_1171348_14_1_2_p13007
+              - sensor.gosungrow_grid_frequency
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_internal_air_temperature
+              - sensor.gosungrow_virtual_1171348_14_1_2_p13019
+            stat_types:
+              - mean
+              - min
+              - max
+          - chart_type: line
+            period: day
+            days_to_show: 90
+            type: statistics-graph
+            entities:
+              - sensor.gosungrow_battery_temperature
+              - sensor.gosungrow_virtual_1171348_14_1_2_p13143
+            stat_types:
+              - mean
+              - min
+              - max

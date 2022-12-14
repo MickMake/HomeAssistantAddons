@@ -46,7 +46,7 @@ The following options are mandatory:
 - sungrow_user
 - sungrow_password
 
-You may have to set these options:
+You may have to set the following options. As of v3.0.0 if you leave the blank, it'll autoconfigure:
 - sungrow_mqtt_host
 - sungrow_mqtt_port
 - sungrow_mqtt_user
@@ -61,6 +61,18 @@ The rare occasion:
 5. Start it up!
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/ScreenShot7.png)
+
+6. Add the suggested Lovelace YAML files:
+
+[LoveLace-Basic.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic.yaml)
+[LoveLace-Stats.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Stats.yaml)
+[LoveLace-Graphs.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Graphs.yaml)
+
+You'll need to modify the ps_id and ps_keys within these files to display the correct info. Any text editor can do a global search and replace.
+
+You can use the GoSungrow tool to get this info:
+  GoSungrow show ps tree
+
 
 ## About GoSunGrow
 See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
