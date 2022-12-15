@@ -76,12 +76,13 @@ bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
 
 
 bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
-/usr/local/bin/GoSungrow mqtt run 
+# /usr/local/bin/GoSungrow mqtt run 
 # /usr/local/bin/GoSungrow mqtt sync 
-checkExit
+# checkExit
 
 
 bashio::log.info "GoSungrow exited without error ..."
+sleep 99999999
 
 #if ! bashio::services.available "mqtt"
 #then
@@ -108,6 +109,4 @@ bashio::log.info "GoSungrow exited without error ..."
 #
 #echo "SUPERVISOR_TOKEN:${SUPERVISOR_TOKEN}"
 #curl -sSL -H "Authorization: Bearer $SUPERVISOR_TOKEN" http://supervisor/services/mqtt
-
-sleep 99999999
  

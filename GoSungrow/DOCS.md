@@ -44,12 +44,10 @@ Install in the usual manner.
 
 The following options are mandatory:
 - sungrow_user
-- sungrow_password
-	Make sure you have created your account at https://isolarcloud.com/
+- sungrow_password - Make sure you have created your account at https://isolarcloud.com/
 
 - sungrow_mqtt_user
-- sungrow_mqtt_password
-	Enter in your login details for HA.
+- sungrow_mqtt_password - Enter in your login details for HA.
 
 You may have to set the following options. As of v3.0.0 if you leave the blank, it'll autoconfigure:
 - sungrow_mqtt_host
