@@ -72,18 +72,18 @@ checkExit
 
 bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
 /usr/local/bin/GoSungrow api login
-# checkExit
+checkExit
 
 
 bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
 # /usr/local/bin/GoSungrow mqtt run 
-# /usr/local/bin/GoSungrow mqtt sync 
-# checkExit
+/usr/local/bin/GoSungrow mqtt sync 
+checkExit
 
 
 bashio::log.info "GoSungrow exited without error ..."
-sleep 99999999
 
+#sleep 99999999
 #if ! bashio::services.available "mqtt"
 #then
 #    echo "No internal MQTT service found. Please install Mosquitto broker"
