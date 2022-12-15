@@ -54,7 +54,7 @@ bashio::log.info "Writing GoSungrow config ..."
 
 
 bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
-/usr/local/bin/GoSungrow api login
+# /usr/local/bin/GoSungrow api login
 # checkExit
 
 
