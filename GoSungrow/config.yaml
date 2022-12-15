@@ -15,7 +15,7 @@ map:
 panel_icon: mdi:solar-power
 auth_api: true
 hassio_api: true
-hassio_role: "admin"
+hassio_role: "supervisor"
 homeassistant_api: true
 startup: application
 init: false
@@ -33,6 +33,7 @@ options:
   mqtt_password: ""
   debug: false
   sungrow_timeout: 60
+
 schema:
   sungrow_user: str
   sungrow_password: password
@@ -45,3 +46,4 @@ schema:
   debug: bool?
   sungrow_timeout: int?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
+

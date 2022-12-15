@@ -38,16 +38,14 @@ export GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
 GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 export GOSUNGROW_MQTT_PORT="$(jq --raw-output '.mqtt_port // empty' ${CONFIG_PATH})"
+GOSUNGROW_MQTT_PORT="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PORT}" '.mqtt_port // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 export GOSUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
 GOSUNGROW_MQTT_USER="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_USER}" '.mqtt_user // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
-set -x
 export GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
-set +x
 GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
-exit
 
 bashio::log.info "Writing GoSungrow config ..."
 /usr/local/bin/GoSungrow config write
@@ -71,4 +69,12 @@ id
 ls -la .GoSungrow .
 ls -l .GoSungrow/config.json config.json
 cat .GoSungrow/config.json config.json
+
+if bashio::services.available "mqtt"; then
+bashio::log.info "MQTT"
+fi
+  bashio::log.info "host: $(bashio::services "mqtt" "host")"
+  bashio::log.info "password: $(bashio::services "mqtt" "password")"
+  bashio::log.info "port: $(bashio::services "mqtt" "port")"
+  bashio::log.info "username: $(bashio::services "mqtt" "username")"
 
