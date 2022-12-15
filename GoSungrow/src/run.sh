@@ -26,6 +26,7 @@ checkExit()
 
 bashio::log.info "Setting up GoSungrow config ..."
 
+set -x
 export GOSUNGROW_USER="$(jq --raw-output '.sungrow_user // empty' ${CONFIG_PATH})"
 export GOSUNGROW_PASSWORD="$(jq --raw-output '.sungrow_password // empty' ${CONFIG_PATH})"
 export GOSUNGROW_HOST="$(jq --raw-output '.sungrow_host // empty' ${CONFIG_PATH})"
@@ -44,7 +45,7 @@ GOSUNGROW_MQTT_USER="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_USER}" '.
 
 export GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
 GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
-
+set +x
 
 bashio::log.info "Writing GoSungrow config ..."
 /usr/local/bin/GoSungrow config write
