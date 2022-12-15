@@ -18,7 +18,7 @@ views:
             type: grid
             cards:
               - type: picture-elements
-                image: /local/SungrowEnergy3.png
+                image: /local/SungrowEnergy2.png
                 elements:
                   - type: image
                     entity: >-
