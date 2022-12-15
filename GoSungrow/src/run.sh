@@ -5,35 +5,35 @@ CONFIG_PATH="/data/config.json"
 
 bashio::log.info "Setting up GoSungrow config ..."
 
-export SUNGROW_HOST=$(bashio::config 'sungrow_host' '')
+export SUNGROW_HOST=$(bashio::config 'sungrow_host')
 if [ "${SUNGROW_HOST}" == "null" ]; then SUNGROW_HOST=""; fi
 
-export SUNGROW_USER=$(bashio::config 'sungrow_user' '')
+export SUNGROW_USER=$(bashio::config 'sungrow_user')
 if [ "${SUNGROW_USER}" == "null" ]; then SUNGROW_USER=""; fi
 
-export SUNGROW_PASSWORD=$(bashio::config 'sungrow_password' '')
+export SUNGROW_PASSWORD=$(bashio::config 'sungrow_password')
 if [ "${SUNGROW_PASSWORD}" == "null" ]; then SUNGROW_PASSWORD=""; fi
 
-export SUNGROW_APPKEY=$(bashio::config 'sungrow_appkey' '')
+export SUNGROW_APPKEY=$(bashio::config 'sungrow_appkey')
 if [ "${SUNGROW_APPKEY}" == "null" ]; then SUNGROW_APPKEY=""; fi
 
-export SUNGROW_DEBUG=$(bashio::config 'sungrow_debug' '')
+export SUNGROW_DEBUG=$(bashio::config 'sungrow_debug')
 if [ "${SUNGROW_DEBUG}" == "null" ]; then SUNGROW_DEBUG=""; fi
 
-export SUNGROW_TIMEOUT=$(bashio::config 'sungrow_timeout' '')
+export SUNGROW_TIMEOUT=$(bashio::config 'sungrow_timeout')
 if [ "${SUNGROW_TIMEOUT}" == "null" ]; then SUNGROW_TIMEOUT=""; fi
 
 
-export SUNGROW_MQTT_HOST=$(bashio::config 'sungrow_mqtt_host' '')
+export SUNGROW_MQTT_HOST=$(bashio::config 'sungrow_mqtt_host')
 if [ "${SUNGROW_MQTT_HOST}" == "null" ]; then SUNGROW_MQTT_HOST=""; fi
 
-export SUNGROW_MQTT_PORT=$(bashio::config 'sungrow_mqtt_port' '')
+export SUNGROW_MQTT_PORT=$(bashio::config 'sungrow_mqtt_port')
 if [ "${SUNGROW_MQTT_PORT}" == "null" ]; then SUNGROW_MQTT_PORT=""; fi
 
-export SUNGROW_MQTT_USER=$(bashio::config 'sungrow_mqtt_user' '')
+export SUNGROW_MQTT_USER=$(bashio::config 'sungrow_mqtt_user')
 if [ "${SUNGROW_MQTT_USER}" == "null" ]; then SUNGROW_MQTT_USER=""; fi
 
-export SUNGROW_MQTT_PASSWORD=$(bashio::config 'sungrow_mqtt_password' '')
+export SUNGROW_MQTT_PASSWORD=$(bashio::config 'sungrow_mqtt_password')
 if [ "${SUNGROW_MQTT_PASSWORD}" == "null" ]; then SUNGROW_MQTT_PASSWORD=""; fi
 
 
