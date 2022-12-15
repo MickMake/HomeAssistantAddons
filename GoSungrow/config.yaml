@@ -15,7 +15,7 @@ map:
 panel_icon: mdi:solar-power
 auth_api: true
 hassio_api: true
-hassio_role: manager
+hassio_role: admin
 startup: services
 init: false
 
