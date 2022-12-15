@@ -1,5 +1,5 @@
 #!/usr/bin/env bashio
-set -e
+# set -e
 
 export CONFIG_PATH="/data/options.json"
 export HOME="/data"
