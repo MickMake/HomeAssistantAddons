@@ -1,22 +1,21 @@
 #!/usr/bin/env bashio
 set -e
-set -x
 
 CONFIG_PATH="/data/config.json"
 
 bashio::log.info "Setting up GoSungrow config ..."
 
-export SUNGROW_HOST=$(bashio::config 'sungrow_host')
-export SUNGROW_USER=$(bashio::config 'sungrow_user')
-export SUNGROW_PASSWORD=$(bashio::config 'sungrow_password')
-export SUNGROW_APPKEY=$(bashio::config 'sungrow_appkey')
-export SUNGROW_DEBUG=$(bashio::config 'sungrow_debug')
-export SUNGROW_TIMEOUT=$(bashio::config 'sungrow_timeout')
+export SUNGROW_HOST=$(bashio::config 'sungrow_host' '')
+export SUNGROW_USER=$(bashio::config 'sungrow_user' '')
+export SUNGROW_PASSWORD=$(bashio::config 'sungrow_password' '')
+export SUNGROW_APPKEY=$(bashio::config 'sungrow_appkey' '')
+export SUNGROW_DEBUG=$(bashio::config 'sungrow_debug' '')
+export SUNGROW_TIMEOUT=$(bashio::config 'sungrow_timeout' '')
 
-export SUNGROW_MQTT_HOST=$(bashio::config 'sungrow_mqtt_host')
-export SUNGROW_MQTT_PORT=$(bashio::config 'sungrow_mqtt_port')
-export SUNGROW_MQTT_USER=$(bashio::config 'sungrow_mqtt_user')
-export SUNGROW_MQTT_PASSWORD=$(bashio::config 'sungrow_mqtt_password')
+export SUNGROW_MQTT_HOST=$(bashio::config 'sungrow_mqtt_host' '')
+export SUNGROW_MQTT_PORT=$(bashio::config 'sungrow_mqtt_port' '')
+export SUNGROW_MQTT_USER=$(bashio::config 'sungrow_mqtt_user' '')
+export SUNGROW_MQTT_PASSWORD=$(bashio::config 'sungrow_mqtt_password' '')
 
 if [ -z "${SUNGROW_MQTT_HOST}" ]
 then
@@ -34,6 +33,21 @@ then
 fi
 
 
+#DEETS="
+#	SUNGROW_HOST = \"${SUNGROW_HOST}\"
+#	SUNGROW_USER = \"${SUNGROW_USER}\"
+#	SUNGROW_PASSWORD = \"${SUNGROW_PASSWORD}\"
+#	SUNGROW_APPKEY = \"${SUNGROW_APPKEY}\"
+#	SUNGROW_DEBUG = \"${SUNGROW_DEBUG}\"
+#	SUNGROW_TIMEOUT = \"${SUNGROW_TIMEOUT}\"
+#
+#	SUNGROW_MQTT_HOST = \"${SUNGROW_MQTT_HOST}\"
+#	SUNGROW_MQTT_PORT = \"${SUNGROW_MQTT_PORT}\"
+#	SUNGROW_MQTT_USER = \"${SUNGROW_MQTT_USER}\"
+#	SUNGROW_MQTT_PASSWORD = \"${SUNGROW_MQTT_PASSWORD}\"
+#"
+
+
 bashio::log.info "Writing GoSungrow config ..."
 /usr/local/bin/GoSungrow config write \
 	--host="${SUNGROW_HOST}" \
@@ -46,6 +60,10 @@ bashio::log.info "Writing GoSungrow config ..."
 	--mqtt-user="${SUNGROW_MQTT_USER}" \
 	--mqtt-password="${SUNGROW_MQTT_PASSWORD}" \
 	--debug="${SUNGROW_DEBUG}"
+
+
+bashio::log.info "Config file now reads:"
+/usr/local/bin/GoSungrow config read
 
 
 bashio::log.info "Login to iSolarCloud using gateway ${SUNGROW_HOST} ..."
