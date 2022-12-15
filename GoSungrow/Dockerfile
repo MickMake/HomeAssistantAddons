@@ -37,7 +37,7 @@ ARG TZ
 ENV TZ ${TZ}
 
 COPY src/ /usr/local/bin/
-RUN chmod a+x /usr/local/bin/setup.sh /usr/local/bin/run.sh && /usr/local/bin/getRelease.sh
+RUN chmod a+x /usr/local/bin/setup.sh && /usr/local/bin/setup.sh
 
 # ENTRYPOINT ["/usr/local/bin/GoSungrow"]
 CMD ["/usr/local/bin/run.sh"]
