@@ -15,9 +15,12 @@ map:
 panel_icon: mdi:solar-power
 auth_api: true
 hassio_api: true
-hassio_role: admin
-startup: services
+hassio_role: "admin"
+homeassistant_api: true
+startup: application
 init: false
+services:
+  - mqtt:need
 
 options:
   sungrow_user: ""
