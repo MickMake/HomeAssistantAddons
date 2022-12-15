@@ -31,7 +31,7 @@ options:
   sungrow_timeout: 60
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
-  sungrow_host: url?
+  sungrow_host: str?
   sungrow_user: str?
   sungrow_password: password?
   sungrow_mqtt_host: str?
