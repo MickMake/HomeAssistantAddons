@@ -40,11 +40,8 @@ GOSUNGROW_DEBUG="$(jq --raw-output '.debug // empty' ${CONFIG_PATH})"
 GOSUNGROW_TIMEOUT="$(jq --raw-output '.sungrow_timeout|tostring + "s" // empty' ${CONFIG_PATH})"
 
 
-if [ -z "${GOSUNGROW_MQTT_HOST}" ]
-then
-	GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
-	GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
-fi
+export GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
+GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
 if [ -z "${GOSUNGROW_MQTT_HOST}" ]
 then
 	bashio::log.error "No MQTT host defined and none could be auto-detected."
@@ -52,29 +49,20 @@ then
 fi
 
 
-if [ -z "${GOSUNGROW_MQTT_PORT}" ]
-then
-	GOSUNGROW_MQTT_PORT="$(jq --raw-output '.mqtt_port // empty' ${CONFIG_PATH})"
-	GOSUNGROW_MQTT_PORT="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PORT}" '.mqtt_port // empty | select(. != "") // $default' ${CONFIG_PATH})"
-fi
+GOSUNGROW_MQTT_PORT="$(jq --raw-output '.mqtt_port // empty' ${CONFIG_PATH})"
+GOSUNGROW_MQTT_PORT="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PORT}" '.mqtt_port // empty | select(. != "") // $default' ${CONFIG_PATH})"
 if [ -z "${GOSUNGROW_MQTT_PORT}" ]
 then
 	GOSUNGROW_MQTT_PORT="1883"
 fi
 
 
-if [ -z "${GOSUNGROW_MQTT_USER}" ]
-then
-	GOSUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
-	GOSUNGROW_MQTT_USER="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_USER}" '.mqtt_user // empty | select(. != "") // $default' ${CONFIG_PATH})"
-fi
+GOSUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
+GOSUNGROW_MQTT_USER="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_USER}" '.mqtt_user // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 
-if [ -z "${GOSUNGROW_MQTT_PASSWORD}" ]
-then
-	GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
-	GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
-fi
+GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
+GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 
 bashio::log.info "Writing GoSungrow config ..."
