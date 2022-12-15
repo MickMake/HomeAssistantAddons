@@ -19,30 +19,25 @@ hassio_api: true
 init: false
 
 options:
-  message: "GoSungrow config"
-  sungrow:
-    - user: ""
-      password: ""
-    - host: "https://augateway.isolarcloud.com"
-    - appkey: "93D72E60331ABDCDC7B39ADC2D1F32B3"
-  mqtt:
-    - host: ""
-      port: ""
-    - user: ""
-      password: ""
+  sungrow_user: ""
+  sungrow_password: ""
+  sungrow_host: "https://augateway.isolarcloud.com"
+  sungrow_appkey: "93D72E60331ABDCDC7B39ADC2D1F32B3"
+  mqtt_host: ""
+  mqtt_port: ""
+  mqtt_user: ""
+  mqtt_password: ""
   debug: false
   timeout: 60
 schema:
-  sungrow:
-    - user: str
-      password: password
-    - host: str?
-    - appkey: str?
-  mqtt:
-    - host: str?
-      port: str?
-    - user: str?
-      password: password?
+  sungrow_user: str
+  sungrow_password: password
+  sungrow_host: str?
+  sungrow_appkey: str?
+  mqtt_host: str?
+  mqtt_port: str?
+  mqtt_user: str?
+  mqtt_password: password?
   debug: bool?
   timeout: int?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
