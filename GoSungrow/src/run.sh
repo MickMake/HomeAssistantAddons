@@ -19,7 +19,7 @@ checkExit()
 		cat ${CONFIG_PATH}
 		/usr/local/bin/GoSungrow config read
 
-		exit ${EXIT}
+		# exit ${EXIT}
 	fi
 }
 
