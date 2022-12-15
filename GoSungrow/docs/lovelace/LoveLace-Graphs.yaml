@@ -10,7 +10,7 @@ views:
         type: grid
         cards:
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13003
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13003
             card_height: 220
             gauge:
               type: radial-gauge
@@ -70,10 +70,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13003
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13003
                 name: PV Yield
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_power
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_power
             card_height: 220
             gauge:
               type: radial-gauge
@@ -136,10 +136,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_power
                 name: PV to Battery
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_power
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_power
             card_height: 220
             gauge:
               type: radial-gauge
@@ -199,10 +199,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_power
                 name: PV to Grid
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_power
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_power
             card_height: 220
             gauge:
               type: radial-gauge
@@ -262,10 +262,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_power
                 name: PV to Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13119
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13119
             card_height: 220
             gauge:
               type: radial-gauge
@@ -325,10 +325,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13119
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13119
                 name: Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_power
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_power
             card_height: 220
             gauge:
               type: radial-gauge
@@ -384,10 +384,10 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_power
                 name: Battery to Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13149
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13149
             card_height: 220
             gauge:
               type: radial-gauge
@@ -448,7 +448,7 @@ views:
             line_width: 1
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13149
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13149
                 name: Grid to Load
   - theme: Backend-selected
     title: Energy
@@ -462,7 +462,7 @@ views:
         type: grid
         cards:
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13112
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13112
             card_height: 220
             gauge:
               type: radial-gauge
@@ -524,10 +524,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13112
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13112
                 name: PV Yield
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_battery_discharge_energy
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_battery_discharge_energy
             card_height: 220
             gauge:
               type: radial-gauge
@@ -590,10 +590,10 @@ views:
             height: 150
             entities:
               - entity: >-
-                  sensor.gosungrow_virtual_1171348_14_1_2_battery_discharge_energy
+                  sensor.gosungrow_virtual_1171348_14_1_1_battery_discharge_energy
                 name: PV to Battery
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_consumption_energy
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_consumption_energy
             card_height: 220
             gauge:
               type: radial-gauge
@@ -655,10 +655,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_consumption_energy
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_consumption_energy
                 name: PV to Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13173
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13173
             card_height: 220
             gauge:
               type: radial-gauge
@@ -720,10 +720,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13173
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13173
                 name: PV to Grid
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_consumption_energy
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_consumption_energy
             card_height: 220
             gauge:
               type: radial-gauge
@@ -785,10 +785,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_pv_consumption_energy
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_pv_consumption_energy
                 name: Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13029
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13029
             card_height: 220
             gauge:
               type: radial-gauge
@@ -845,10 +845,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13029
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13029
                 name: Battery to Load
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13147
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13147
             card_height: 220
             gauge:
               type: radial-gauge
@@ -910,7 +910,7 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13147
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13147
                 name: Grid to Load
   - theme: Backend-selected
     type: panel
@@ -923,7 +923,7 @@ views:
         type: grid
         cards:
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_battery_charge_energy
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_battery_charge_energy
             card_height: 220
             gauge:
               type: radial-gauge
@@ -987,10 +987,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_battery_charge_energy
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_battery_charge_energy
                 name: Battery Charge
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13140
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13140
             card_height: 220
             gauge:
               type: radial-gauge
@@ -1047,10 +1047,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13140
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13140
                 name: Battery Capacity
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_43_2_2_p58604
+            entity: sensor.gosungrow_virtual_1171348_43_1_2_p58604
             card_height: 220
             gauge:
               type: radial-gauge
@@ -1114,10 +1114,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_43_2_2_p58604
+              - entity: sensor.gosungrow_virtual_1171348_43_1_2_p58604
                 name: Battery Level
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_14_1_2_p13142
+            entity: sensor.gosungrow_virtual_1171348_14_1_1_p13142
             card_height: 220
             gauge:
               type: radial-gauge
@@ -1182,10 +1182,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13142
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13142
                 name: Battery Health
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_43_2_2_p58601
+            entity: sensor.gosungrow_virtual_1171348_43_1_2_p58601
             card_height: 220
             gauge:
               type: radial-gauge
@@ -1245,10 +1245,10 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_43_2_2_p58601
+              - entity: sensor.gosungrow_virtual_1171348_43_1_2_p58601
                 name: Battery Voltage
           - type: custom:canvas-gauge-card
-            entity: sensor.gosungrow_virtual_1171348_43_2_2_p58602
+            entity: sensor.gosungrow_virtual_1171348_43_1_2_p58602
             card_height: 220
             gauge:
               type: radial-gauge
@@ -1308,7 +1308,7 @@ views:
             hours_to_show: 16
             height: 150
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_43_2_2_p58602
+              - entity: sensor.gosungrow_virtual_1171348_43_1_2_p58602
                 name: Battery Current
   - title: VA
     path: va
@@ -1326,37 +1326,37 @@ views:
               - type: grid
                 cards:
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13138
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13138
                     min: 0
                     max: 400
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13161
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13161
                     min: 0
                     max: 800
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13001
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13001
                     min: 0
                     max: 400
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13105
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13105
                     min: 0
                     max: 400
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13157
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13157
                     min: 0
                     max: 400
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13158
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13158
                     min: 0
                     max: 400
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13159
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13159
                     min: 0
                     max: 400
                     needle: true
@@ -1365,7 +1365,7 @@ views:
               - type: grid
                 cards:
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13139
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13139
                     min: 0
                     max: 10
                     needle: true
@@ -1374,12 +1374,12 @@ views:
                       yellow: 8
                       red: 9
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13161
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13161
                     min: 0
                     max: 800
                     needle: true
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13002
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13002
                     min: 0
                     max: 10
                     needle: true
@@ -1388,7 +1388,7 @@ views:
                       yellow: 8
                       red: 9
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13106
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13106
                     min: 0
                     max: 10
                     needle: true
@@ -1397,7 +1397,7 @@ views:
                       yellow: 8
                       red: 9
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13008
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13008
                     min: 0
                     max: 10
                     needle: true
@@ -1406,7 +1406,7 @@ views:
                       yellow: 8
                       red: 9
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13009
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13009
                     min: 0
                     max: 10
                     needle: true
@@ -1415,7 +1415,7 @@ views:
                       yellow: 8
                       red: 9
                   - type: gauge
-                    entity: sensor.gosungrow_virtual_1171348_14_1_2_p13010
+                    entity: sensor.gosungrow_virtual_1171348_14_1_1_p13010
                     min: 0
                     max: 10
                     needle: true
@@ -1465,211 +1465,211 @@ views:
         cards:
           - type: entities
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13174
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13176
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13122
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13125
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13173
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13175
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13199
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13137
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13130
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13116
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13144
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13147
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13148
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13174
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13176
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13122
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13125
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13173
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13175
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13199
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13137
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13130
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13116
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13144
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13147
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13148
             title: Energy
             state_color: true
           - type: history-graph
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13174
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13176
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13122
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13125
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13173
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13175
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13199
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13137
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13130
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13116
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13144
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13147
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13148
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13174
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13176
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13122
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13125
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13173
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13175
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13199
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13137
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13130
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13116
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13144
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13147
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13148
             hours_to_show: 720
             refresh_interval: 0
           - type: entities
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13126
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13150
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13149
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13126
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13150
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13149
             title: Power
             state_color: true
           - type: history-graph
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13126
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13150
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_p13149
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13126
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13150
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_p13149
             hours_to_show: 720
             refresh_interval: 0
           - type: entities
             entities:
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_energy_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_energy_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_power_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_grid_power_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_grid_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_power_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_power_active
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_charge_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_charge_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_discharge_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_discharge_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13028
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13029
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13034
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13035
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13126
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13138
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13139
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13140
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13143
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13150
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13162
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13163
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13174
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13176
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_power
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_power_active
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_charge_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_charge_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_discharge_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_discharge_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13028
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13029
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13034
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13035
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13126
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13138
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13139
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13140
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13143
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13150
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13162
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13163
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13174
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13176
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_power
             title: Battery Information
             state_color: true
           - type: entities
             entities:
-              - binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_power_active
+              - binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_battery_power_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_battery_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_load_power_active
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_load_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_power_active
-              - sensor.gosungrow_virtual_1171348_14_1_2_grid_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_grid_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_grid_to_load_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_grid_to_load_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13121
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13122
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13125
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13147
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13148
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13149
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13173
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13175
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_power_active
+              - sensor.gosungrow_virtual_1171348_14_1_1_grid_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_grid_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_grid_to_load_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_grid_to_load_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13121
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13122
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13125
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13147
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13148
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13149
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13173
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13175
             state_color: true
             title: Grid Information
           - type: entities
             entities:
-              - binary_sensor.gosungrow_virtual_1171348_14_1_2_load_power_active
-              - sensor.gosungrow_virtual_1171348_14_1_2_daily_total_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_load_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_consumption_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_total_daily_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_total_load_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13116
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13119
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13130
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13137
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13199
+              - binary_sensor.gosungrow_virtual_1171348_14_1_1_load_power_active
+              - sensor.gosungrow_virtual_1171348_14_1_1_daily_total_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_load_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_consumption_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_total_daily_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_total_load_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13116
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13119
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13130
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13137
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13199
             title: Load Information
             state_color: true
           - type: entities
             entities:
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13001
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13002
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13105
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13106
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13001
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13002
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13105
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13106
             title: MPPT Information
             state_color: true
           - type: entities
             entities:
-              - binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_power_active
+              - binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_power_active
               - >-
-                binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_power_active
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_daily_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_total_energy
-              - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_power
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13003
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13007
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13008
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13009
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13010
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13011
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13012
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13013
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13019
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13112
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13134
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13155
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13157
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13158
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13159
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13160
-              - sensor.gosungrow_virtual_1171348_14_1_2_p13161
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18061
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18062
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18063
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18064
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18065
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18066
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18067
-              - sensor.gosungrow_virtual_1171348_14_1_2_p18068
+                binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_power_active
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_daily_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_total_energy
+              - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_power
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13003
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13007
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13008
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13009
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13010
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13011
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13012
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13013
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13019
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13112
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13134
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13155
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13157
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13158
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13159
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13160
+              - sensor.gosungrow_virtual_1171348_14_1_1_p13161
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18061
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18062
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18063
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18064
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18065
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18066
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18067
+              - sensor.gosungrow_virtual_1171348_14_1_1_p18068
             title: Overview
             state_color: true
           - type: entities
             entities:
-              - sensor.gosungrow_virtual_1171348_22_247_2_p23014
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58601
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58602
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58603
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58606
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58607
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58608
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58609
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58610
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58611
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58612
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58613
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58614
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58615
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58616
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58617
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58618
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58619
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58620
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58621
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58622
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58623
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58624
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58625
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58626
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58627
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58628
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58629
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58630
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58631
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58632
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58633
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58635
-              - sensor.gosungrow_virtual_1171348_43_2_2_p58636
+              - sensor.gosungrow_virtual_1171348_22_247_1_p23014
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58601
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58602
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58603
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58606
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58607
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58608
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58609
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58610
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58611
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58612
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58613
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58614
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58615
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58616
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58617
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58618
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58619
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58620
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58621
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58622
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58623
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58624
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58625
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58626
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58627
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58628
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58629
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58630
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58631
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58632
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58633
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58635
+              - sensor.gosungrow_virtual_1171348_43_1_2_p58636
             title: Other Information
             state_color: true
           - type: iframe
@@ -1719,38 +1719,38 @@ views:
         cards:
           - type: entities
             entities:
-              - entity: binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_active_power
+              - entity: binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_active_power
             state_color: true
             title: PV
           - type: entities
             entities:
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_grid_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_grid_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_active_power
             state_color: true
             title: Battery
           - type: entities
             entities:
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_battery_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_battery_active_power
               - entity: >-
-                  binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_load_active_power
+                  binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_load_active_power
             state_color: true
             title: Grid
           - type: entities
             entities:
-              - binary_sensor.gosungrow_virtual_1171348_14_1_2_load_active_power
+              - binary_sensor.gosungrow_virtual_1171348_14_1_1_load_active_power
             state_color: true
             title: Load
   - theme: Backend-selected
@@ -1760,14 +1760,14 @@ views:
     cards:
       - type: custom:mini-graph-card
         entities:
-          - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+          - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
             aggregate_func: max
             name: Max
             color: null
-          - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+          - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
             aggregate_func: min
             name: Min
-          - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+          - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
             aggregate_func: avg
             name: Avg
             color: green
@@ -1787,14 +1787,14 @@ views:
         cards:
           - type: custom:mini-graph-card
             entities:
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
                 aggregate_func: max
                 name: Max
                 color: null
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
                 aggregate_func: min
                 name: Min
-              - entity: sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
+              - entity: sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
                 aggregate_func: avg
                 name: Avg
                 color: green
@@ -1811,135 +1811,135 @@ views:
     cards:
       - type: entities
         entities:
-          - sensor.gosungrow_virtual_1171348_14_1_2_2
+          - sensor.gosungrow_virtual_1171348_14_1_1_2
           - sensor.gosungrow
-          - sensor.gosungrow_virtual_1171348_14_1_2_ac_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_ac_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13160
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_capacity_kwh
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_charging_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_discharging_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_power
-          - binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_to_grid_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_ac_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_ac_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13160
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_capacity_kwh
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_charging_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_discharging_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_power
+          - binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_to_grid_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_grid_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_grid_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_battery_to_load_active_power
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58603
-          - sensor.gosungrow_virtual_1171348_14_1_2_battery_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_bus_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_co2_reduce
-          - sensor.gosungrow_virtual_1171348_14_1_2_co2_reduce_total
-          - sensor.gosungrow_virtual_1171348_14_1_2_curr_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_battery_to_load_active_power
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58603
+          - sensor.gosungrow_virtual_1171348_14_1_1_battery_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_bus_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_co2_reduce
+          - sensor.gosungrow_virtual_1171348_14_1_1_co2_reduce_total
+          - sensor.gosungrow_virtual_1171348_14_1_1_curr_power
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_battery_charging_energy
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_battery_charging_energy
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_battery_charging_energy_from_pv
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_battery_charging_energy_from_pv
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_battery_discharging_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_daily_feed_in_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13173
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_battery_discharging_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_daily_feed_in_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13173
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_load_energy_consumption
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_load_energy_consumption
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_load_energy_consumption_from_pv
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13147
-          - sensor.gosungrow_virtual_1171348_14_1_2_daily_purchased_energy_2
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13112
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13116
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13199
-          - sensor.gosungrow_virtual_1171348_14_1_2_equivalent_hour
-          - sensor.gosungrow_virtual_1171348_14_1_2_es_discharge_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_es_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_es_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_es_total_discharge_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_es_total_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_grid_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13007
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13149
-          - binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_grid_to_battery_power
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_load_energy_consumption_from_pv
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13147
+          - sensor.gosungrow_virtual_1171348_14_1_1_daily_purchased_energy_2
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13112
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13116
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13199
+          - sensor.gosungrow_virtual_1171348_14_1_1_equivalent_hour
+          - sensor.gosungrow_virtual_1171348_14_1_1_es_discharge_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_es_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_es_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_es_total_discharge_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_es_total_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_grid_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13007
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13149
+          - binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_grid_to_battery_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_battery_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13149
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_battery_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13149
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_grid_to_load_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_installed_map_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_internal_air_temperature
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13119
-          - binary_sensor.gosungrow_virtual_1171348_14_1_2_load_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_max_charging_current_bms
-          - sensor.gosungrow_virtual_1171348_14_1_2_max_discharging_current_bms
-          - sensor.gosungrow_virtual_1171348_14_1_2_mppt1_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_mppt1_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_mppt2_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_mppt2_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_a_backup_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_a_backup_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_a_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_a_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_b_backup_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_b_backup_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_b_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_b_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_c_backup_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_c_backup_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_c_current
-          - sensor.gosungrow_virtual_1171348_14_1_2_phase_c_voltage
-          - sensor.gosungrow_virtual_1171348_14_1_2_purchased_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_battery_charge
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13112
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13173
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_2_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13003
-          - binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_grid_to_load_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_installed_map_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_internal_air_temperature
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13119
+          - binary_sensor.gosungrow_virtual_1171348_14_1_1_load_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_max_charging_current_bms
+          - sensor.gosungrow_virtual_1171348_14_1_1_max_discharging_current_bms
+          - sensor.gosungrow_virtual_1171348_14_1_1_mppt1_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_mppt1_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_mppt2_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_mppt2_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_a_backup_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_a_backup_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_a_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_a_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_b_backup_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_b_backup_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_b_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_b_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_c_backup_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_c_backup_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_c_current
+          - sensor.gosungrow_virtual_1171348_14_1_1_phase_c_voltage
+          - sensor.gosungrow_virtual_1171348_14_1_1_purchased_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_battery_charge
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13112
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13173
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_1_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13003
+          - binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_battery_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_battery_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_grid_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_grid_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_power
           - >-
-            binary_sensor.gosungrow_virtual_1171348_14_1_2_pv_to_load_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13116
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13134
-          - sensor.gosungrow_virtual_1171348_14_1_2_today_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_today_income
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_backup_power
+            binary_sensor.gosungrow_virtual_1171348_14_1_1_pv_to_load_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13116
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13134
+          - sensor.gosungrow_virtual_1171348_14_1_1_today_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_today_income
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_backup_power
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_total_battery_charging_energy
+            sensor.gosungrow_virtual_1171348_14_1_1_total_battery_charging_energy
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_total_battery_charging_energy_from_pv
+            sensor.gosungrow_virtual_1171348_14_1_1_total_battery_charging_energy_from_pv
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_total_battery_discharging_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_capacity
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_dc_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13130
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_export_active_power
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_feed_in_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_feed_in_energy_pv
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_income
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_load_active_power
+            sensor.gosungrow_virtual_1171348_14_1_1_total_battery_discharging_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_capacity
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_dc_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13130
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_export_active_power
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_feed_in_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_feed_in_energy_pv
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_income
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_load_active_power
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_total_load_energy_consumption
+            sensor.gosungrow_virtual_1171348_14_1_1_total_load_energy_consumption
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_total_load_energy_consumption_from_pv
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_purchased_energy
-          - sensor.gosungrow_virtual_1171348_14_1_2_total_pv_yield
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13012
-          - sensor.gosungrow_virtual_1171348_14_1_2_use_energy
-          - update.gosungrow_virtual_1171348_14_1_2_update
+            sensor.gosungrow_virtual_1171348_14_1_1_total_load_energy_consumption_from_pv
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_purchased_energy
+          - sensor.gosungrow_virtual_1171348_14_1_1_total_pv_yield
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13012
+          - sensor.gosungrow_virtual_1171348_14_1_1_use_energy
+          - update.gosungrow_virtual_1171348_14_1_1_update
           - >-
-            sensor.gosungrow_virtual_1171348_14_1_2_daily_feed_in_energy_compensation
-          - sensor.gosungrow_virtual_1171348_14_1_2_daily_purchased_energy_cost
+            sensor.gosungrow_virtual_1171348_14_1_1_daily_feed_in_energy_compensation
+          - sensor.gosungrow_virtual_1171348_14_1_1_daily_purchased_energy_cost
   - theme: Backend-selected
     title: Foofoo
     path: foofoo
@@ -1951,7 +1951,7 @@ views:
         days_to_show: 180
         type: statistics-graph
         entities:
-          - sensor.gosungrow_virtual_1171348_14_1_2_p13116
+          - sensor.gosungrow_virtual_1171348_14_1_1_p13116
           - sensor.sungrow_daily_pv_yield
         stat_types:
           - mean
@@ -1964,39 +1964,39 @@ views:
     cards:
       - type: entities
         entities:
-          - sensor.gosungrow_virtual_1171348_22_247_2_p23014
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58601
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58602
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58603
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58606
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58607
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58608
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58609
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58610
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58611
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58612
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58613
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58614
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58615
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58616
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58617
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58618
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58619
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58620
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58621
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58622
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58623
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58624
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58625
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58626
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58627
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58628
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58629
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58630
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58631
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58632
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58633
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58635
-          - sensor.gosungrow_virtual_1171348_43_2_2_p58636
+          - sensor.gosungrow_virtual_1171348_22_247_1_p23014
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58601
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58602
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58603
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58606
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58607
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58608
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58609
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58610
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58611
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58612
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58613
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58614
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58615
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58616
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58617
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58618
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58619
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58620
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58621
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58622
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58623
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58624
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58625
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58626
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58627
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58628
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58629
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58630
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58631
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58632
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58633
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58635
+          - sensor.gosungrow_virtual_1171348_43_1_2_p58636
         title: Other Information
         state_color: true
