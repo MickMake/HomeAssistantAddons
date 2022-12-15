@@ -13,9 +13,9 @@ arch:
 map:
   - config:rw
 panel_icon: mdi:solar-power
-auth_api: true
+auth_api: false
+hassio_role: "manager"
 hassio_api: true
-hassio_role: "admin"
 homeassistant_api: true
 startup: "application"
 init: false
