@@ -84,5 +84,8 @@ fi
 env
 ping core-mosquitto
 
+echo "SUPERVISOR_TOKEN:${SUPERVISOR_TOKEN}"
+curl -sSL -H "Authorization: Bearer $SUPERVISOR_TOKEN" http://supervisor/services/mqtt
+
 sleep 99999999
  
