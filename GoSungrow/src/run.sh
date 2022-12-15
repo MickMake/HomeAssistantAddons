@@ -1,5 +1,6 @@
 #!/usr/bin/env bashio
 set -e
+set -x
 
 CONFIG_PATH="/data/config.json"
 
