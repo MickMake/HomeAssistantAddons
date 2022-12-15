@@ -26,38 +26,38 @@ checkExit()
 bashio::log.info "Setting up GoSungrow config ..."
 
 export SUNGROW_HOST="$(bashio::config 'sungrow_host')"
-if [ "${SUNGROW_HOST}" != "null" ]; then SUNGROW_HOST=""; fi
+if [ "${SUNGROW_HOST}" == "null" ]; then SUNGROW_HOST=""; fi
 
 export SUNGROW_USER="$(bashio::config 'sungrow_user')"
-if [ "${SUNGROW_USER}" != "null" ]; then SUNGROW_USER=""; fi
+if [ "${SUNGROW_USER}" == "null" ]; then SUNGROW_USER=""; fi
 
 export SUNGROW_PASSWORD="$(bashio::config 'sungrow_password')"
-if [ "${SUNGROW_PASSWORD}" != "null" ]; then SUNGROW_PASSWORD=""; fi
+if [ "${SUNGROW_PASSWORD}" == "null" ]; then SUNGROW_PASSWORD=""; fi
 
 export SUNGROW_APPKEY="$(bashio::config 'sungrow_appkey')"
-if [ "${SUNGROW_APPKEY}" != "null" ]; then SUNGROW_APPKEY=""; fi
+if [ "${SUNGROW_APPKEY}" == "null" ]; then SUNGROW_APPKEY=""; fi
 
 export SUNGROW_DEBUG="$(bashio::config 'sungrow_debug')"
-if [ "${SUNGROW_DEBUG}" != "null" ]; then SUNGROW_DEBUG=""; fi
+if [ "${SUNGROW_DEBUG}" == "null" ]; then SUNGROW_DEBUG=""; fi
 
 export SUNGROW_TIMEOUT="$(bashio::config 'sungrow_timeout')"
-if [ "${SUNGROW_TIMEOUT}" != "null" ]; then SUNGROW_TIMEOUT=""; fi
+if [ "${SUNGROW_TIMEOUT}" == "null" ]; then SUNGROW_TIMEOUT=""; fi
 
 
 export SUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
 SUNGROW_MQTT_HOST="$(bashio::config 'sungrow_mqtt_host' "${SUNGROW_MQTT_HOST}")"
-if [ "${SUNGROW_MQTT_HOST}" != "null" ]; then SUNGROW_MQTT_HOST=""; fi
+if [ "${SUNGROW_MQTT_HOST}" == "null" ]; then SUNGROW_MQTT_HOST=""; fi
 
 export SUNGROW_MQTT_PORT="$(bashio::config 'sungrow_mqtt_port')"
-if [ "${SUNGROW_MQTT_PORT}" != "null" ]; then SUNGROW_MQTT_PORT=""; fi
+if [ "${SUNGROW_MQTT_PORT}" == "null" ]; then SUNGROW_MQTT_PORT=""; fi
 
 export SUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
 SUNGROW_MQTT_USER="$(bashio::config 'sungrow_mqtt_user' "${SUNGROW_MQTT_USER}")"
-if [ "${SUNGROW_MQTT_USER}" != "null" ]; then SUNGROW_MQTT_USER=""; fi
+if [ "${SUNGROW_MQTT_USER}" == "null" ]; then SUNGROW_MQTT_USER=""; fi
 
 export SUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
 SUNGROW_MQTT_PASSWORD="$(bashio::config 'sungrow_mqtt_password' "${SUNGROW_MQTT_PASSWORD}")"
-if [ "${SUNGROW_MQTT_PASSWORD}" != "null" ]; then SUNGROW_MQTT_PASSWORD=""; fi
+if [ "${SUNGROW_MQTT_PASSWORD}" == "null" ]; then SUNGROW_MQTT_PASSWORD=""; fi
 
 
 DEETS="
@@ -77,6 +77,7 @@ bashio::log.info "DEETS: $DEETS"
 
 
 bashio::log.info "Writing GoSungrow config ..."
+set -x
 /usr/local/bin/GoSungrow config write \
 	--host="${SUNGROW_HOST}" \
 	--user="${SUNGROW_USER}" \
@@ -88,7 +89,9 @@ bashio::log.info "Writing GoSungrow config ..."
 	--mqtt-user="${SUNGROW_MQTT_USER}" \
 	--mqtt-password="${SUNGROW_MQTT_PASSWORD}" \
 	--debug="${SUNGROW_DEBUG}"
+set +x
 checkExit
+		cat ${CONFIG_PATH}
 
 
 bashio::log.info "Config file now reads:"
