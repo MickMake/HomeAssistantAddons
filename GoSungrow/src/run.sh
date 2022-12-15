@@ -2,7 +2,7 @@
 set -e
 
 export CONFIG_PATH="/data/options.json"
-export GOSUNGROW_CONFIG="$HOME/.GoSungrow/config.json"
+export GOSUNGROW_CONFIG="config.json"
 
 checkExit()
 {
@@ -22,9 +22,6 @@ checkExit()
 		exit ${EXIT}
 	fi
 }
-
-id
-ls -la $HOME
 
 
 bashio::log.info "Setting up GoSungrow config ..."
@@ -86,7 +83,9 @@ checkExit
 
 bashio::log.info "GoSungrow exited without error ..."
 
-ls -la $HOME
-ls -la $HOME/.GoSungrow .
-ls -l $HOME/.GoSungrow/config.json config.json
-cat $HOME/.GoSungrow/config.json config.json
+pwd
+id
+ls -la .GoSungrow .
+ls -l .GoSungrow/config.json config.json
+cat .GoSungrow/config.json config.json
+
