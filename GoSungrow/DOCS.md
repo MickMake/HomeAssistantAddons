@@ -81,11 +81,9 @@ If you want to add a different user for MQTT, then here's how.
 
 ## Lovelace examples
 
-These are the Lovelace YAML files I use for my HA instance:
+These are the Lovelace YAML files and images I use for my HA instance:
 
-[LoveLace-Basic.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic.yaml)
-[LoveLace-Stats.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Stats.yaml)
-[LoveLace-Graphs.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Graphs.yaml)
+[lovelace](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/lovelace)
 
 You'll need to modify the ps_id and ps_keys within these files to display the correct info. Any text editor can do a global search and replace.
 
