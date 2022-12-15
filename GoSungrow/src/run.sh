@@ -68,7 +68,6 @@ if ! bashio::services.available "mqtt"
 then
     echo "No internal MQTT service found. Please install Mosquitto broker"
     bashio::log.error "No internal MQTT service found. Please install Mosquitto broker"
-    exit -1
 fi
 
   echo "host: $(bashio::services "mqtt" "host")"
