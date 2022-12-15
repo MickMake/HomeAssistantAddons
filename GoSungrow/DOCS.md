@@ -90,6 +90,8 @@ You'll need to modify the ps_id and ps_keys within these files to display the co
 You can use the GoSungrow tool to get this info:
   GoSungrow show ps tree
 
+Also grab the images from the [images directory](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/lovelace/images) and place them in your /config/www directory.
+
 
 ## About GoSunGrow
 See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
