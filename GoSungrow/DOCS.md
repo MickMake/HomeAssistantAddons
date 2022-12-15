@@ -45,12 +45,15 @@ Install in the usual manner.
 The following options are mandatory:
 - sungrow_user
 - sungrow_password
+	Make sure you have created your account at https://isolarcloud.com/
+
+- sungrow_mqtt_user
+- sungrow_mqtt_password
+	Enter in your login details for HA.
 
 You may have to set the following options. As of v3.0.0 if you leave the blank, it'll autoconfigure:
 - sungrow_mqtt_host
 - sungrow_mqtt_port
-- sungrow_mqtt_user
-- sungrow_mqtt_password
 
 The rare occasion:
 - sungrow_host - May need to be changed depending on which global server you connect to.
@@ -62,7 +65,25 @@ The rare occasion:
 
 ![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/ScreenShot7.png)
 
-6. Add the suggested Lovelace YAML files:
+
+## Adding a specific MQTT user account.
+
+If you want to add a different user for MQTT, then here's how.
+
+1. Click on "Add User".
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/mqtt1.png)
+
+2. Create your user.
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/mqtt2.png)
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/mqtt3.png)
+
+3. For extra security, toggle "Can only login from olocal network."
+![Install add-on](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/mqtt4.png)
+
+
+## Lovelace examples
+
+These are the Lovelace YAML files I use for my HA instance:
 
 [LoveLace-Basic.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic.yaml)
 [LoveLace-Stats.yaml](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Stats.yaml)

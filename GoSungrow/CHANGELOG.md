@@ -1,3 +1,7 @@
+## [3.0.1] - 2022-12-15
+### Changed
+- HA install fixups.
+
 ## [3.0.0] - 2022-12-14
 ### Changed
 - GoSunGrow for HA ([fixes #1](https://github.com/MickMake/GoSunGrow/issues/10))

@@ -1,6 +1,6 @@
 name: "GoSungrow"
 description: "Fetch data from isolarcloud.com and push to HA."
-version: "3.0.0"
+version: "3.0.1"
 stage: "stable"
 slug: "gosungrow"
 url: "https://github.com/MickMake/GoSunGrow/"
@@ -23,26 +23,26 @@ services:
   - mqtt:need
 
 options:
+  sungrow_host: "https://augateway.isolarcloud.com"
   sungrow_user: ""
   sungrow_password: ""
-  sungrow_host: "https://augateway.isolarcloud.com"
   sungrow_appkey: "93D72E60331ABDCDC7B39ADC2D1F32B3"
-  mqtt_host: ""
-  mqtt_port: ""
+  mqtt_host: "core-mosquitto"
+  mqtt_port: "1883"
   mqtt_user: ""
   mqtt_password: ""
   debug: false
   sungrow_timeout: 60
 
 schema:
+  sungrow_host: str?
   sungrow_user: str
   sungrow_password: password
-  sungrow_host: str?
   sungrow_appkey: str?
   mqtt_host: str?
   mqtt_port: str?
-  mqtt_user: str?
-  mqtt_password: password?
+  mqtt_user: str
+  mqtt_password: password
   debug: bool?
   sungrow_timeout: int?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
