@@ -71,10 +71,10 @@ ls -l .GoSungrow/config.json config.json
 cat .GoSungrow/config.json config.json
 
 if bashio::services.available "mqtt"; then
-bashio::log.info "MQTT"
+echo "MQTT"
 fi
-  bashio::log.info "host: $(bashio::services "mqtt" "host")"
-  bashio::log.info "password: $(bashio::services "mqtt" "password")"
-  bashio::log.info "port: $(bashio::services "mqtt" "port")"
-  bashio::log.info "username: $(bashio::services "mqtt" "username")"
+  echo "host: $(bashio::services "mqtt" "host")"
+  echo "password: $(bashio::services "mqtt" "password")"
+  echo "port: $(bashio::services "mqtt" "port")"
+  echo "username: $(bashio::services "mqtt" "username")"
 
