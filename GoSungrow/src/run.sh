@@ -60,4 +60,5 @@ set -x
 ls -lart /usr/local/bin/
 uname -a
 ifconfig
+/usr/local/bin/GoSungrow config read
 
