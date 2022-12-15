@@ -1,7 +1,7 @@
 name: "GoSungrow"
 description: "Fetch data from isolarcloud.com and push to HA."
 version: "3.0.0"
-stage: stable
+stage: "stable"
 slug: "gosungrow"
 url: "https://github.com/MickMake/GoSunGrow/"
 codenotary: "mick@mickmake.com"
@@ -17,7 +17,7 @@ auth_api: true
 hassio_api: true
 hassio_role: "admin"
 homeassistant_api: true
-startup: application
+startup: "application"
 init: false
 services:
   - mqtt:need
