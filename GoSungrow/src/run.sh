@@ -2,7 +2,7 @@
 set -e
 
 export CONFIG_PATH="/data/options.json"
-export GOSUNGROW_CONFIG="config.json"
+export HOME="/data"
 
 checkExit()
 {
@@ -46,28 +46,8 @@ export GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
 GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 
-#DEETS="
-#	GOSUNGROW_HOST = \"${GOSUNGROW_HOST}\"
-#	GOSUNGROW_USER = \"${GOSUNGROW_USER}\"
-#	GOSUNGROW_PASSWORD = \"${GOSUNGROW_PASSWORD}\"
-#	GOSUNGROW_APPKEY = \"${GOSUNGROW_APPKEY}\"
-#	GOSUNGROW_DEBUG = \"${GOSUNGROW_DEBUG}\"
-#	GOSUNGROW_TIMEOUT = \"${GOSUNGROW_TIMEOUT}\"
-#
-#	GOSUNGROW_MQTT_HOST = \"${GOSUNGROW_MQTT_HOST}\"
-#	GOSUNGROW_MQTT_PORT = \"${GOSUNGROW_MQTT_PORT}\"
-#	GOSUNGROW_MQTT_USER = \"${GOSUNGROW_MQTT_USER}\"
-#	GOSUNGROW_MQTT_PASSWORD = \"${GOSUNGROW_MQTT_PASSWORD}\"
-#"
-#bashio::log.info "DEETS: $DEETS"
-#cat $CONFIG_PATH
-#ls -l $CONFIG_PATH
-
-
 bashio::log.info "Writing GoSungrow config ..."
-set -x
 /usr/local/bin/GoSungrow config write
-set +x
 checkExit
 
 
