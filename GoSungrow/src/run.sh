@@ -58,8 +58,8 @@ bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
 # checkExit
 
 
-# bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
-# /usr/local/bin/GoSungrow mqtt sync
+bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
+/usr/local/bin/GoSungrow mqtt sync
 # checkExit
 
 
