@@ -22,8 +22,8 @@ options:
   sungrow_host: "https://augateway.isolarcloud.com"
   sungrow_user: ""
   sungrow_password: ""
-  sungrow_mqtt_host: "localhost"
-  sungrow_mqtt_port: "1883"
+  sungrow_mqtt_host: ""
+  sungrow_mqtt_port: ""
   sungrow_mqtt_password: ""
   sungrow_mqtt_user: ""
   sungrow_debug: false
