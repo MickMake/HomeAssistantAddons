@@ -1,7 +1,7 @@
 #!/usr/bin/env bashio
 set -e
 
-CONFIG_PATH="/data/config.json"
+export CONFIG_PATH="/data/options.json"
 
 bashio::log.info "Setting up GoSungrow config ..."
 
@@ -83,8 +83,8 @@ bashio::log.info "Writing GoSungrow config ..."
 	--debug="${SUNGROW_DEBUG}"
 
 
-bashio::log.info "Config file now reads:"
-/usr/local/bin/GoSungrow config read
+# bashio::log.info "Config file now reads:"
+# /usr/local/bin/GoSungrow config read
 
 
 bashio::log.info "Login to iSolarCloud using gateway ${SUNGROW_HOST} ..."
@@ -96,9 +96,12 @@ bashio::log.info "Syncing data from gateway ${SUNGROW_HOST} ..."
 
 
 bashio::log.info "GoSungrow terminated. Checking on things, please include this in any issue on GitHub ..."
+sleep 10
 set -x
 ls -lart /usr/local/bin/
 uname -a
 ifconfig
+ls -l ${CONFIG_PATH}
+cat ${CONFIG_PATH}
 /usr/local/bin/GoSungrow config read
 
