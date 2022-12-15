@@ -25,6 +25,6 @@ So, now you can get to everything using [Home Assistant](https://www.home-assist
 
 
 ## Further docs
-[Install and configure](DOCS.md)
+[Install and configure](https://github.com/MickMake/HomeAssistantAddons/blob/main/GoSungrow/DOCS.md)
 
 [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
