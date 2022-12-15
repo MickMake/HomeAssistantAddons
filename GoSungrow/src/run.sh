@@ -64,15 +64,12 @@ checkExit()
 
 # bashio::log.info "GoSungrow exited without error ..."
 
-pwd
-id
-ls -la .GoSungrow .
-ls -l .GoSungrow/config.json config.json
-cat .GoSungrow/config.json config.json
+if ! bashio::services.available "mqtt"; then
+    echo "No internal MQTT service found. Please install Mosquitto broker"
+    bashio::log.error "No internal MQTT service found. Please install Mosquitto broker"
+    exit -1
+else
 
-if bashio::services.available "mqtt"; then
-echo "MQTT"
-fi
   echo "host: $(bashio::services "mqtt" "host")"
   echo "password: $(bashio::services "mqtt" "password")"
   echo "port: $(bashio::services "mqtt" "port")"
