@@ -4,7 +4,7 @@ version: "3.0.0"
 stage: stable
 slug: "gosungrow"
 url: "https://github.com/MickMake/GoSunGrow/"
-codenotary: mick@mickmake.com
+codenotary: "mick@mickmake.com"
 arch:
   - armhf
   - armv7
@@ -28,7 +28,7 @@ options:
   mqtt_user: ""
   mqtt_password: ""
   debug: false
-  timeout: 60
+  sungrow_timeout: 60
 schema:
   sungrow_user: str
   sungrow_password: password
@@ -39,5 +39,5 @@ schema:
   mqtt_user: str?
   mqtt_password: password?
   debug: bool?
-  timeout: int?
+  sungrow_timeout: int?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
