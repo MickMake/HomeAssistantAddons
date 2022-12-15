@@ -81,3 +81,6 @@ fi
   bashio::log.info "port: $(bashio::services "mqtt" "port")"
   bashio::log.info "username: $(bashio::services "mqtt" "username")"
 
+env
+ping core-mosquitto
+ 
