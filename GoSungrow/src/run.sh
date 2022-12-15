@@ -83,4 +83,6 @@ fi
 
 env
 ping core-mosquitto
+
+sleep 99999999
  
