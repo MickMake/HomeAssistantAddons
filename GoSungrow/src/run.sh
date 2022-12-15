@@ -44,8 +44,8 @@ export GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
 GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
 if [ -z "${GOSUNGROW_MQTT_HOST}" ]
 then
-	bashio::log.error "No MQTT host defined and none could be auto-detected."
-	exit -1
+	# bashio::log.error "No MQTT host defined and none could be auto-detected."
+	GOSUNGROW_MQTT_HOST="core-mosquitto"
 fi
 
 
