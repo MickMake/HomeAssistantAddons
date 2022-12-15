@@ -26,6 +26,9 @@ checkExit()
 
 # bashio::log.info "Setting up GoSungrow config ..."
 
+echo "SUPERVISOR_TOKEN:${SUPERVISOR_TOKEN}"
+curl -sSL -H "Authorization: Bearer $SUPERVISOR_TOKEN" http://supervisor/services/mqtt
+
 export GOSUNGROW_USER="$(jq --raw-output '.sungrow_user // empty' ${CONFIG_PATH})"
 export GOSUNGROW_PASSWORD="$(jq --raw-output '.sungrow_password // empty' ${CONFIG_PATH})"
 export GOSUNGROW_HOST="$(jq --raw-output '.sungrow_host // empty' ${CONFIG_PATH})"
@@ -67,7 +70,7 @@ bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
 
 
 bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
-/usr/local/bin/GoSungrow mqtt sync
+# /usr/local/bin/GoSungrow mqtt sync
 # checkExit
 
 
