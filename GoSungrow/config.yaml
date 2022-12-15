@@ -14,8 +14,9 @@ map:
   - config:rw
 panel_icon: mdi:solar-power
 auth_api: true
-startup: services
 hassio_api: true
+hassio_role: homeassistant
+startup: services
 init: false
 
 options:
