@@ -81,7 +81,11 @@ fi
   bashio::log.info "port: $(bashio::services "mqtt" "port")"
   bashio::log.info "username: $(bashio::services "mqtt" "username")"
 
+echo "################################################################################"
+set
+echo "################################################################################"
 env
+echo "################################################################################"
 ping core-mosquitto
 
 echo "SUPERVISOR_TOKEN:${SUPERVISOR_TOKEN}"
