@@ -26,16 +26,17 @@ checkExit()
 
 # bashio::log.info "Setting up GoSungrow config ..."
 
-# export GOSUNGROW_USER="$(jq --raw-output '.sungrow_user // empty' ${CONFIG_PATH})"
-# export GOSUNGROW_PASSWORD="$(jq --raw-output '.sungrow_password // empty' ${CONFIG_PATH})"
-# export GOSUNGROW_HOST="$(jq --raw-output '.sungrow_host // empty' ${CONFIG_PATH})"
-# export GOSUNGROW_APPKEY="$(jq --raw-output '.sungrow_appkey // empty' ${CONFIG_PATH})"
+export GOSUNGROW_USER="$(jq --raw-output '.sungrow_user // empty' ${CONFIG_PATH})"
+export GOSUNGROW_PASSWORD="$(jq --raw-output '.sungrow_password // empty' ${CONFIG_PATH})"
+export GOSUNGROW_HOST="$(jq --raw-output '.sungrow_host // empty' ${CONFIG_PATH})"
+export GOSUNGROW_APPKEY="$(jq --raw-output '.sungrow_appkey // empty' ${CONFIG_PATH})"
 
-# export GOSUNGROW_DEBUG="$(jq --raw-output '.debug // empty' ${CONFIG_PATH})"
-# export GOSUNGROW_TIMEOUT="$(jq --raw-output '.sungrow_timeout|tostring + "s" // empty' ${CONFIG_PATH})"
+export GOSUNGROW_DEBUG="$(jq --raw-output '.debug // empty' ${CONFIG_PATH})"
+export GOSUNGROW_TIMEOUT="$(jq --raw-output '.sungrow_timeout|tostring + "s" // empty' ${CONFIG_PATH})"
 
 # export GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
-# GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
+export GOSUNGROW_MQTT_HOST="core-mosquitto"
+GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 # export GOSUNGROW_MQTT_PORT="$(jq --raw-output '.mqtt_port // empty' ${CONFIG_PATH})"
 # GOSUNGROW_MQTT_PORT="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PORT}" '.mqtt_port // empty | select(. != "") // $default' ${CONFIG_PATH})"
@@ -47,13 +48,13 @@ checkExit()
 # GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
 
 
-# bashio::log.info "Writing GoSungrow config ..."
-# /usr/local/bin/GoSungrow config write
+bashio::log.info "Writing GoSungrow config ..."
+/usr/local/bin/GoSungrow config write
 # checkExit
 
 
-# bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
-# /usr/local/bin/GoSungrow api login
+bashio::log.info "Login to iSolarCloud using gateway ${GOSUNGROW_HOST} ..."
+/usr/local/bin/GoSungrow api login
 # checkExit
 
 
