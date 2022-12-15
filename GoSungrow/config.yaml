@@ -15,7 +15,7 @@ map:
 panel_icon: mdi:solar-power
 auth_api: true
 hassio_api: true
-hassio_role: homeassistant
+hassio_role: manager
 startup: services
 init: false
 
