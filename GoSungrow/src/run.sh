@@ -1,8 +1,8 @@
 #!/usr/bin/env bashio
 # set -e
 
-export CONFIG_PATH="/data/options.json"
 export HOME="/data"
+export CONFIG_PATH="/data/options.json"
 
 checkExit()
 {
@@ -27,20 +27,28 @@ checkExit()
 bashio::log.info "Setting up GoSungrow config ..."
 
 export GOSUNGROW_USER GOSUNGROW_PASSWORD GOSUNGROW_HOST
-export GOSUNGROW_APPKEY GOSUNGROW_DEBUG GOSUNGROW_TIMEOUT
-export GOSUNGROW_MQTT_HOST GOSUNGROW_MQTT_PORT GOSUNGROW_MQTT_USER GOSUNGROW_MQTT_PASSWORD
-
-
 GOSUNGROW_USER="$(jq --raw-output '.sungrow_user // empty' ${CONFIG_PATH})"
 GOSUNGROW_PASSWORD="$(jq --raw-output '.sungrow_password // empty' ${CONFIG_PATH})"
 GOSUNGROW_HOST="$(jq --raw-output '.sungrow_host // empty' ${CONFIG_PATH})"
-GOSUNGROW_APPKEY="$(jq --raw-output '.sungrow_appkey // empty' ${CONFIG_PATH})"
 
+
+export GOSUNGROW_APPKEY GOSUNGROW_DEBUG GOSUNGROW_TIMEOUT
+GOSUNGROW_APPKEY="$(jq --raw-output '.sungrow_appkey // empty' ${CONFIG_PATH})"
 GOSUNGROW_DEBUG="$(jq --raw-output '.debug // empty' ${CONFIG_PATH})"
 GOSUNGROW_TIMEOUT="$(jq --raw-output '.sungrow_timeout|tostring + "s" // empty' ${CONFIG_PATH})"
 
 
-export GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
+export GOSUNGROW_MQTT_HOST GOSUNGROW_MQTT_PORT
+export GOSUNGROW_MQTT_USER GOSUNGROW_MQTT_PASSWORD
+if bashio::services.available "mqtt"
+then
+	bashio::log.info "MQTT services is available!"
+	GOSUNGROW_MQTT_HOST="$(bashio::services mqtt "host")"
+	GOSUNGROW_MQTT_PORT="$(bashio::services mqtt "port")"
+	GOSUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
+	GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
+fi
+
 GOSUNGROW_MQTT_HOST="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_HOST}" '.mqtt_host // empty | select(. != "") // $default' ${CONFIG_PATH})"
 if [ -z "${GOSUNGROW_MQTT_HOST}" ]
 then
@@ -49,7 +57,6 @@ then
 fi
 
 
-GOSUNGROW_MQTT_PORT="$(jq --raw-output '.mqtt_port // empty' ${CONFIG_PATH})"
 GOSUNGROW_MQTT_PORT="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PORT}" '.mqtt_port // empty | select(. != "") // $default' ${CONFIG_PATH})"
 if [ -z "${GOSUNGROW_MQTT_PORT}" ]
 then
@@ -57,12 +64,18 @@ then
 fi
 
 
-GOSUNGROW_MQTT_USER="$(bashio::services mqtt "username")"
 GOSUNGROW_MQTT_USER="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_USER}" '.mqtt_user // empty | select(. != "") // $default' ${CONFIG_PATH})"
+if [ -z "${GOSUNGROW_MQTT_USER}" ]
+then
+	bashio::log.warning "MQTT user is empty. I'm guessing this is what you wanted?"
+fi
 
 
-GOSUNGROW_MQTT_PASSWORD="$(bashio::services mqtt "password")"
 GOSUNGROW_MQTT_PASSWORD="$(jq --raw-output --arg default "${GOSUNGROW_MQTT_PASSWORD}" '.mqtt_password // empty | select(. != "") // $default' ${CONFIG_PATH})"
+if [ -z "${GOSUNGROW_MQTT_PASSWORD}" ]
+then
+	bashio::log.warning "MQTT password is empty. I'm guessing this is what you wanted?"
+fi
 
 
 bashio::log.info "Writing GoSungrow config ..."
@@ -76,13 +89,16 @@ checkExit
 
 
 bashio::log.info "Syncing data from gateway ${GOSUNGROW_HOST} ..."
-# /usr/local/bin/GoSungrow mqtt run 
-/usr/local/bin/GoSungrow mqtt sync 
+/usr/local/bin/GoSungrow mqtt run 
+# /usr/local/bin/GoSungrow mqtt sync 
 checkExit
 
 
-bashio::log.info "GoSungrow exited without error ..."
+bashio::log.info "GoSungrow exited without error ... strange ..."
+sleep 5
 
+
+# DEBUG...
 #sleep 99999999
 #if ! bashio::services.available "mqtt"
 #then
