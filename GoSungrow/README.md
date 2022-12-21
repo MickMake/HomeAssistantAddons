@@ -23,17 +23,14 @@ The iSolarCloud interface is kinda nice, but it's not Open Source...
 
 So, now you can get to everything using [Home Assistant](https://www.home-assistant.io/).
 
-![LoveLace-Basic1.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic1.png)
-
-![LoveLace-Basic2.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic2.png)
-
-![LoveLace-Basic3.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic3.png)
-
-![LoveLace-Basic4.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic4.png)
-
-![LoveLace-Basic5.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic5.png)
-
-![LoveLace-Basic6.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic6.png)
+|                                              -                                              |                                              -                                               |
+|:-------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------:|
+| ![LoveLace-Basic1.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic1.png) | ![LoveLace-Basic2.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic2.png) |
+| | |
+| ![LoveLace-Basic3.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic3.png) | ![LoveLace-Basic4.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic4.png) |
+| | |
+| ![LoveLace-Basic5.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic5.png) | ![LoveLace-Basic6.png](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/LoveLace-Basic6.png) |
+| | |
 
 
 ## Further docs
