@@ -38,8 +38,10 @@ GOSUNGROW_DEBUG="$(jq --raw-output '.debug // empty' ${CONFIG_PATH})"
 GOSUNGROW_TIMEOUT="$(jq --raw-output '.sungrow_timeout|tostring + "s" // empty' ${CONFIG_PATH})"
 
 
-export GOSUNGROW_MQTT_HOST GOSUNGROW_MQTT_PORT
-export GOSUNGROW_MQTT_USER GOSUNGROW_MQTT_PASSWORD
+export GOSUNGROW_MQTT_HOST=""
+export GOSUNGROW_MQTT_PORT=""
+export GOSUNGROW_MQTT_USER=""
+export GOSUNGROW_MQTT_PASSWORD=""
 if bashio::services.available "mqtt"
 then
 	bashio::log.info "MQTT services is available!"
