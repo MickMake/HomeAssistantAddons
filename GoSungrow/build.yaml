@@ -7,4 +7,4 @@ codenotary:
   signer: mick@mickmake.com
   base_image: mick@mickmake.com
 args:
-  GOSUNGROW_VERSION: 3.0.2
+  GOSUNGROW_VERSION: 3.0.3

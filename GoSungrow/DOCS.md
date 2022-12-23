@@ -92,5 +92,22 @@ You can use the GoSungrow tool to get this info:
 Also grab the images from the [images directory](https://github.com/MickMake/HomeAssistantAddons/raw/main/GoSungrow/docs/lovelace/images) and place them in your /config/www directory.
 
 
+## HA's Energy Dashboard
+
+To use HA's Energy Dashboard, you'll need to find the following entries. Make sure to replace `XXXXXXXXXXXXXX` with your ps_key.
+
+### Electricity grid
+
+- sensor.gosungrow_virtual_XXXXXXXXXXXXXX_grid_to_load_energy
+- sensor.gosungrow_virtual_XXXXXXXXXXXXXX_pv_to_grid_energy
+
+### Solar Panels
+- sensor.gosungrow_virtual_XXXXXXXXXXXXXX_pv_energy
+
+### Home Battery Storage
+- sensor.gosungrow_virtual_XXXXXXXXXXXXXX_battery_discharge_energy
+- sensor.gosungrow_virtual_XXXXXXXXXXXXXX_battery_charge_energy
+
+
 ## About GoSunGrow
 See the docs here [GoSunGrow](https://github.com/MickMake/GoSunGrow/)
