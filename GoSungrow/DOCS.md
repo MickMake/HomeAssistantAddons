@@ -49,7 +49,7 @@ The following options are mandatory:
 - sungrow_mqtt_user
 - sungrow_mqtt_password - Enter in your login details for HA.
 
-You may have to set the following options. As of v3.0.0 if you leave the blank, it'll autoconfigure:
+You may have to set the following options. As of v3.0.x if you leave the blank, it'll autoconfigure:
 - sungrow_mqtt_host
 - sungrow_mqtt_port
 
